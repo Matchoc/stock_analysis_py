@@ -1,0 +1,1126 @@
+{
+    "AAR-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AAV": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ABX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ACO-X": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AEM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AGI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AGU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AIF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AIM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AKG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ALA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AP-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "APS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AQN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ARE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ARX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ASR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ATA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ATD-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AX-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "AYA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BAD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BAM-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BBD-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BBD.B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BBU-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BCB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BCE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BEI-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BEP-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BIR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BMO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BNE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BNP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BNS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BPY-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BTE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BTO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BYD-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "BYL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CAE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CAR-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CCA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CCL-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CCO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CEU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CFP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CGX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CHE-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CIGI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CIX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CJR-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CLS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CMG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CNQ": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CNR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CPG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CPX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CRR-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CSH-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CSU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CTC-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CUF-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CVE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "CWB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "D-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DDC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DGC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DH": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DHX-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DII-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DOL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DOO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DRG-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DRT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "DSG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ECA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ECI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ECN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EDV": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EFN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EFX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EIF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ELD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EMA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EMP-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ENB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ENF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ENGH": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EOX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EPI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ERF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ESI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "EXE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FCR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FFH": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FNV": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FRU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FSV": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FTS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FTT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FTU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "FVI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "G": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GAS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GCL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GEI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GEO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GIB-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GIL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GRT-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GTE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GUD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GUY": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "GWO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "H": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "HBC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "HBM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "HCG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "HR-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "HSE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IAG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IFC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IFP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IGM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IMG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IMO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "INE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IPL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ITC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ITP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "IVN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "JE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "K": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "KDX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "KEL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "KEY": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "KL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "KXS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "L": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "LB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "LIF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "LNR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "LUC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "LUN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MAG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MBA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MBT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MCB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MDA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MEG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MFC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MFI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MIC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MNW": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MRE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MRU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MSI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MST-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MTL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "MX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NDM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NFI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NGD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NPI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NSU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NVA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NVC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NVU-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "NWC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "OGC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ONEX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "OR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "OSB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "OTC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PAA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PBH": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PEY": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PJC-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PKI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PLI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PLS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PNT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "POT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "POW": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PPL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PSI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PSK": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PVG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PWF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "PXT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "QBR-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "QSR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RBA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RCI-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "REF-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "REI-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RFP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RIC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RKN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RNW": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RRX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RUS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "RY": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "S": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SAP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SCL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SES": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SFD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SGY": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SJ": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SJR-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SLF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SLW": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SMF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SMT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SNC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SPB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SPE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SRU-UN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SSL": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SSO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "STN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "SW": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "T": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TCL-A": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TCN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TD": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TECK-B": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TFII": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "THO": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TIH": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TMB": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TOG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TOU": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TR": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TRI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TRP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TRQ": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TV": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "TXG": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "UNS": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "VET": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "VFF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "VII": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "VRX": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "VSN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WCN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WCP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WEF": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WFT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WJA": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WN": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WPK": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WSP": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "WTE": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "X": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "XCT": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "XTC": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "YCM": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "YRI": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+    "ZZZ": {
+        "exchange":"to",
+        "category":"unknown"
+    },
+	"GSPTSE": {
+		"exchange":"to",
+		"category":"unknown"
+	}
+}
