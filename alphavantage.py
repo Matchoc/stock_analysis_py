@@ -20,6 +20,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from time import strftime
 from time import sleep
+from operator import itemgetter
 
 
 ###############################################################################
@@ -99,7 +100,7 @@ def get_latest_json(symbol):
 	with open(pricefile, 'r') as jsonfile:
 		data = json.load(jsonfile)
 		
-	return data
+	return data, pricefile
 	
 ###############################################################################
 # PLOTTING
@@ -109,9 +110,9 @@ def plot_points(params):
 	start_key = params["plot_start_date"]
 	length = params["plot_period"]
 	
-	x = list(range(length))
+	x = list(reversed(range(length)))
 	y = []
-	data = get_latest_json(params["single_symbol"])
+	data, pricefile = get_latest_json(params["single_symbol"])
 	price_data = data[JSON_PRICE_ROOT]
 	sorted_dates = sorted(price_data.keys())
 	
@@ -129,19 +130,24 @@ def plot_points_do(x, y, type='ro'):
 def plot_line(params):
 	start_key = params["plot_start_date"]
 	length = params["plot_period"]
+	tech_period = params["tech_period"]
 	
-	x = list(range(length))
-	y = []
-	data = get_latest_json(params["single_symbol"])
+	num_line = int(length / tech_period)
+	data, pricefile = get_latest_json(params["single_symbol"])
 	price_data = data[JSON_PRICE_ROOT]
 	sorted_dates = sorted(price_data.keys())
 	index = sorted_dates.index(start_key)
-	slope = price_data[sorted_dates[index]][JSON_REGRESSION_SLOPE]
-	origin = price_data[sorted_dates[index]][JSON_REGRESSION_ORIGIN]
-	for i in range(length):
-		y.append(slope * i + origin)
-	
-	plot_points_do(x, y, 'b-')
+	for l in range(num_line):
+		x = list(range((num_line*tech_period) - (l * tech_period), (num_line*tech_period) - ((l+1) * tech_period), -1))
+		#x = list(range(tech_period * l, tech_period * (l+1)))
+		y = []
+		slope = price_data[sorted_dates[index]][JSON_REGRESSION_SLOPE]
+		origin = price_data[sorted_dates[index]][JSON_REGRESSION_ORIGIN]
+		for i in range(tech_period):
+			y.append(slope * i + origin)
+		
+		index -= tech_period
+		plot_points_do(x, y, 'g-')
 
 def plot_line_do(slope, origin, type='r-'):
 	plt.plot([1,2,3], [1,2,3], type)
@@ -199,7 +205,10 @@ def dl_full_time_series_daily_adjusted():
 		sleep(3.0)
 		
 def tech_linear_regression(symbol, period):
-	data = get_latest_json(symbol)
+	data, pricefile = get_latest_json(symbol)
+	if data is None or JSON_PRICE_ROOT not in data:
+		myprint("Invalid data for " + pricefile, 4)
+		return
 	price_data = data[JSON_PRICE_ROOT]
 	sorted_dates = sorted(price_data.keys())
 	
@@ -237,14 +246,69 @@ def tech_linear_regression(symbol, period):
 			indent=4, separators=(',', ': '))
 	
 	myprint(datay)
+	
+def tech_linear_regression_all(period):
+	symbols = os.walk(os.path.join(DATA_FOLDER, "prices"))
+	symbols = next(symbols)[1]
+	total = len(symbols)
+	count = 1
+	for symbol in symbols:
+		myprint("[" + count + "/" + total + "] linear regression for " + symbol)
+		tech_linear_regression(symbol, period)
+		count += 1
+		
+def cmp_lin_reg(symbol, compare_to, period):
+	my_data, my_pricefile = get_latest_json(params["single_symbol"])
+	
+	my_price_data = my_data[JSON_PRICE_ROOT]
+	# most recent first because it's more interesting
+	my_sorted_dates = sorted(my_price_data.keys(), reverse=True)
+	diffs = []
+	myprint("comparet to " + str(compare_to))
+	for other_s in compare_to:
+		other_data, other_pricefile = get_latest_json(other_s)
+		if other_data is None or JSON_PRICE_ROOT not in other_data:
+			myprint("Invalid data for " + other_pricefile, 4)
+			continue
+		other_price_data = other_data[JSON_PRICE_ROOT]
+		other_sorted_dates = sorted(other_price_data.keys(), reverse=True)
+		count = 0
+		total_diff = 0
+		matching_period_count = 0
+		for i in range(int(len(my_sorted_dates) / period)):
+			cur_date = my_sorted_dates[count]
+			if cur_date not in other_price_data:
+				myprint("Could not find " + cur_date + " in " + other_pricefile, 4)
+				break
+			#myprint("cur_date " + str(cur_date) + " between " + my_pricefile + " and " + other_pricefile)
+			count += period
+			
+			my_slope = my_price_data[cur_date][JSON_REGRESSION_SLOPE]
+			other_slope = other_price_data[cur_date][JSON_REGRESSION_SLOPE]
+			
+			ideal_slope = -my_slope
+			diff = (other_slope - ideal_slope) * (other_slope - ideal_slope) # squared diff
+			total_diff += diff
+			matching_period_count += 1
+		diffs.append((other_pricefile, total_diff, matching_period_count))
+	diffs = sorted(diffs, key=itemgetter(1))
+	myprint(diffs, 4)
+	return diffs
+		
 		
 def do_actions(actions, params):
 	if "dl_everything" in actions:
 		dl_full_time_series_daily_adjusted()
 	if "dl_single_symbol" in actions:
 		dl_time_series_daily_adjusted(params["single_symbol"], False)
+	if "tech_lin_reg_all" in actions:
+		tech_linear_regression_all(params["tech_period"])
 	if "tech_lin_reg" in actions:
 		tech_linear_regression(params["single_symbol"], params["tech_period"])
+	if "cmp_lin_reg" in actions:
+		symbols = os.walk(os.path.join(DATA_FOLDER, "prices"))
+		symbols = next(symbols)[1]
+		cmp_lin_reg(params["single_symbol"], symbols, params["tech_period"])
 	if "plot_line" in actions:
 		plot_line(params)
 	if "plot_points" in actions:
@@ -255,18 +319,21 @@ def do_actions(actions, params):
 		
 if __name__ == '__main__':
 	actions = [
+		#"cmp_lin_reg",
+		#"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
-		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
+		"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
 		"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
 		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
-		"single_symbol" : "bns.to", # used in dl_single_symbol
+		#"single_symbol" : "BNS.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		"single_symbol" : "MBA.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		"tech_period" : 14, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting
-		"plot_period" : 200, # length of time to go back in time from plot_start_date
+		"plot_period" : 140, # length of time to go back in time from plot_start_date
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)

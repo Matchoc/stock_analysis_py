@@ -1,0 +1,29 @@
+bbn-un.to : Brookfield business partners
+	- Investment company, primary current investment in 
+		business services (real estate, fuel...), construction, energy and industrial operations
+	- 2018-07-09 : current matching algo suggest this company moves in opposite direction from bns.to
+	- around 50$
+	- market cap 4.7b
+	- assets 16.4b
+	- ebitda 191m (us)
+	- ffo 138m (us)
+	- subsidies : BGIS, Royal LePage, Greenergy, Ontario Gaming GTA, Nova Cold Logistics
+		- GrafTech, NAPalladium, Hammerstone, armtec
+	- 0.65% divident ?
+	- 108m outstanding shares
+	- float 66.1m
+
+
+
+
+
+
+ECN.to : ECN capital corps
+	- Financial business services company, 
+		home improvement, housing, credit card & paiement services
+	- 1.16% divident
+	- market cap 1.142m
+	- around 3-4$
+	- shares outstanding 330m, 362,118,837 ?
+	- eps (0.21)
+	-

@@ -15,7 +15,9 @@
             "5. adjusted close": 43.2875,
             "6. volume": 15813.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.34000000000002,
+            "cust. regression slope": 4.306319610667274e-16
         },
         "2018-01-03": {
             "1. open": 43.42,
@@ -25,7 +27,9 @@
             "5. adjusted close": 43.2775,
             "6. volume": 16808.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.33731601731603,
+            "cust. regression slope": 0.00028138528138579443
         },
         "2018-01-04": {
             "1. open": 44.35,
@@ -35,7 +39,9 @@
             "5. adjusted close": 45.0453,
             "6. volume": 120066.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.81000000000002,
+            "cust. regression slope": -0.04928571428571366
         },
         "2018-01-05": {
             "1. open": 46.16,
@@ -45,7 +51,9 @@
             "5. adjusted close": 47.2926,
             "6. volume": 616085.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.83324675324676,
+            "cust. regression slope": -0.15454545454545407
         },
         "2018-01-08": {
             "1. open": 47.8,
@@ -55,7 +63,9 @@
             "5. adjusted close": 47.8919,
             "6. volume": 70179.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.89601731601733,
+            "cust. regression slope": -0.2593290043290038
         },
         "2018-01-09": {
             "1. open": 48.13,
@@ -65,7 +75,9 @@
             "5. adjusted close": 47.8519,
             "6. volume": 37862.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.80835497835499,
+            "cust. regression slope": -0.343030303030302
         },
         "2018-01-10": {
             "1. open": 47.8,
@@ -75,7 +87,9 @@
             "5. adjusted close": 46.7033,
             "6. volume": 46151.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.2735497835498,
+            "cust. regression slope": -0.3745887445887437
         },
         "2018-01-11": {
             "1. open": 47.11,
@@ -85,7 +99,9 @@
             "5. adjusted close": 46.6334,
             "6. volume": 79264.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.61632034632035,
+            "cust. regression slope": -0.3893722943722936
         },
         "2018-01-12": {
             "1. open": 46.45,
@@ -95,7 +111,9 @@
             "5. adjusted close": 46.4037,
             "6. volume": 73229.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.795844155844165,
+            "cust. regression slope": -0.38318181818181746
         },
         "2018-01-15": {
             "1. open": 46.46,
@@ -105,7 +123,9 @@
             "5. adjusted close": 46.2938,
             "6. volume": 133962.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.8512987012987,
+            "cust. regression slope": -0.3603896103896098
         },
         "2018-01-16": {
             "1. open": 46.78,
@@ -115,7 +135,9 @@
             "5. adjusted close": 45.9043,
             "6. volume": 54950.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.710865800865804,
+            "cust. regression slope": -0.31359307359307304
         },
         "2018-01-17": {
             "1. open": 45.96,
@@ -125,7 +147,9 @@
             "5. adjusted close": 45.6146,
             "6. volume": 37716.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.413203463203466,
+            "cust. regression slope": -0.24729437229437193
         },
         "2018-01-18": {
             "1. open": 45.85,
@@ -135,7 +159,9 @@
             "5. adjusted close": 46.134,
             "6. volume": 41609.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.18450216450217,
+            "cust. regression slope": -0.18554112554112515
         },
         "2018-01-19": {
             "1. open": 46.31,
@@ -145,7 +171,9 @@
             "5. adjusted close": 47.3825,
             "6. volume": 144201.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.204935064935064,
+            "cust. regression slope": -0.1466233766233764
         },
         "2018-01-22": {
             "1. open": 47.81,
@@ -155,7 +183,9 @@
             "5. adjusted close": 48.2415,
             "6. volume": 49686.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.33194805194806,
+            "cust. regression slope": -0.11415584415584368
         },
         "2018-01-23": {
             "1. open": 48.5,
@@ -165,7 +195,9 @@
             "5. adjusted close": 48.5011,
             "6. volume": 125426.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.37688311688312,
+            "cust. regression slope": -0.06720779220779192
         },
         "2018-01-24": {
             "1. open": 48.6,
@@ -175,7 +207,9 @@
             "5. adjusted close": 48.1016,
             "6. volume": 42227.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.43181818181818,
+            "cust. regression slope": -0.04383116883116868
         },
         "2018-01-25": {
             "1. open": 48.16,
@@ -185,7 +219,9 @@
             "5. adjusted close": 48.0817,
             "6. volume": 135079.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.73930735930736,
+            "cust. regression slope": -0.0796969696969695
         },
         "2018-01-26": {
             "1. open": 48.38,
@@ -195,7 +231,9 @@
             "5. adjusted close": 48.2015,
             "6. volume": 52203.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.14857142857143,
+            "cust. regression slope": -0.13499999999999998
         },
         "2018-01-29": {
             "1. open": 48.18,
@@ -205,7 +243,9 @@
             "5. adjusted close": 47.762,
             "6. volume": 58178.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.424112554112554,
+            "cust. regression slope": -0.17528138528138523
         },
         "2018-01-30": {
             "1. open": 47.6,
@@ -215,7 +255,9 @@
             "5. adjusted close": 47.1628,
             "6. volume": 126501.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.36212121212122,
+            "cust. regression slope": -0.1617316017316015
         },
         "2018-01-31": {
             "1. open": 47.0,
@@ -225,7 +267,9 @@
             "5. adjusted close": 47.9119,
             "6. volume": 121729.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.476580086580086,
+            "cust. regression slope": -0.16502164502164493
         },
         "2018-02-01": {
             "1. open": 47.69,
@@ -235,7 +279,9 @@
             "5. adjusted close": 47.3625,
             "6. volume": 85818.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.36878787878788,
+            "cust. regression slope": -0.13982683982683974
         },
         "2018-02-02": {
             "1. open": 47.0,
@@ -245,7 +291,9 @@
             "5. adjusted close": 46.0941,
             "6. volume": 48841.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.87389610389611,
+            "cust. regression slope": -0.07116883116883085
         },
         "2018-02-05": {
             "1. open": 45.7,
@@ -255,7 +303,9 @@
             "5. adjusted close": 44.8656,
             "6. volume": 76423.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.99415584415584,
+            "cust. regression slope": 0.043896103896103655
         },
         "2018-02-06": {
             "1. open": 44.45,
@@ -265,7 +315,9 @@
             "5. adjusted close": 45.4648,
             "6. volume": 95356.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.26177489177489,
+            "cust. regression slope": 0.14699134199134156
         },
         "2018-02-07": {
             "1. open": 45.34,
@@ -275,7 +327,9 @@
             "5. adjusted close": 46.134,
             "6. volume": 77190.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.79480519480519,
+            "cust. regression slope": 0.21370129870129836
         },
         "2018-02-08": {
             "1. open": 46.53,
@@ -285,7 +339,9 @@
             "5. adjusted close": 45.6546,
             "6. volume": 40738.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.393809523809516,
+            "cust. regression slope": 0.25333333333333297
         },
         "2018-02-09": {
             "1. open": 45.75,
@@ -295,7 +351,9 @@
             "5. adjusted close": 45.8344,
             "6. volume": 37934.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.227575757575764,
+            "cust. regression slope": 0.25248917748917754
         },
         "2018-02-12": {
             "1. open": 46.17,
@@ -305,7 +363,9 @@
             "5. adjusted close": 46.3837,
             "6. volume": 57663.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.32251082251082,
+            "cust. regression slope": 0.21729437229437223
         },
         "2018-02-13": {
             "1. open": 46.4,
@@ -315,7 +375,9 @@
             "5. adjusted close": 46.5435,
             "6. volume": 72035.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.46229437229438,
+            "cust. regression slope": 0.18140692640692668
         },
         "2018-02-14": {
             "1. open": 46.44,
@@ -325,7 +387,9 @@
             "5. adjusted close": 46.5435,
             "6. volume": 256961.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.64623376623377,
+            "cust. regression slope": 0.13941558441558444
         },
         "2018-02-15": {
             "1. open": 46.9,
@@ -335,7 +399,9 @@
             "5. adjusted close": 46.2539,
             "6. volume": 53162.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.81770562770563,
+            "cust. regression slope": 0.09502164502164488
         },
         "2018-02-16": {
             "1. open": 46.17,
@@ -345,7 +411,9 @@
             "5. adjusted close": 44.9954,
             "6. volume": 64400.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.64151515151516,
+            "cust. regression slope": 0.09192640692640702
         },
         "2018-02-20": {
             "1. open": 45.17,
@@ -355,7 +423,9 @@
             "5. adjusted close": 46.0142,
             "6. volume": 87085.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.729523809523805,
+            "cust. regression slope": 0.06761904761904736
         },
         "2018-02-21": {
             "1. open": 45.95,
@@ -365,7 +435,9 @@
             "5. adjusted close": 46.144,
             "6. volume": 159859.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.00415584415583,
+            "cust. regression slope": 0.010324675324674886
         },
         "2018-02-22": {
             "1. open": 46.24,
@@ -375,7 +447,9 @@
             "5. adjusted close": 45.8344,
             "6. volume": 37702.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.16350649350649,
+            "cust. regression slope": -0.028051948051948224
         },
         "2018-02-23": {
             "1. open": 45.94,
@@ -385,7 +459,9 @@
             "5. adjusted close": 44.8156,
             "6. volume": 108136.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.89753246753246,
+            "cust. regression slope": -0.003116883116883389
         },
         "2018-02-26": {
             "1. open": 44.86,
@@ -395,7 +471,9 @@
             "5. adjusted close": 44.9455,
             "6. volume": 175278.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.51354978354978,
+            "cust. regression slope": 0.0525541125541124
         },
         "2018-02-27": {
             "1. open": 45.04,
@@ -405,7 +483,9 @@
             "5. adjusted close": 44.6758,
             "6. volume": 19936.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.148181818181826,
+            "cust. regression slope": 0.09668831168831206
         },
         "2018-02-28": {
             "1. open": 44.7,
@@ -415,7 +495,9 @@
             "5. adjusted close": 43.8168,
             "6. volume": 38190.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.680346320346324,
+            "cust. regression slope": 0.1398484848484853
         },
         "2018-03-01": {
             "1. open": 43.88,
@@ -425,7 +507,9 @@
             "5. adjusted close": 43.8568,
             "6. volume": 23168.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.218744588744585,
+            "cust. regression slope": 0.18742424242424258
         },
         "2018-03-02": {
             "1. open": 43.91,
@@ -435,7 +519,9 @@
             "5. adjusted close": 44.1065,
             "6. volume": 53205.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.90683982683983,
+            "cust. regression slope": 0.2143290043290047
         },
         "2018-03-05": {
             "1. open": 44.18,
@@ -445,7 +531,9 @@
             "5. adjusted close": 44.6458,
             "6. volume": 25940.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.87800865800866,
+            "cust. regression slope": 0.20069264069264106
         },
         "2018-03-06": {
             "1. open": 44.71,
@@ -455,7 +543,9 @@
             "5. adjusted close": 44.7956,
             "6. volume": 92122.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 43.96709956709957,
+            "cust. regression slope": 0.17010822510822515
         },
         "2018-03-07": {
             "1. open": 44.76,
@@ -465,7 +555,9 @@
             "5. adjusted close": 45.4748,
             "6. volume": 36663.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.29173160173159,
+            "cust. regression slope": 0.11281385281385252
         },
         "2018-03-08": {
             "1. open": 45.64,
@@ -475,7 +567,9 @@
             "5. adjusted close": 45.7645,
             "6. volume": 40405.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.68142857142857,
+            "cust. regression slope": 0.05214285714285706
         },
         "2018-03-09": {
             "1. open": 45.97,
@@ -485,7 +579,9 @@
             "5. adjusted close": 45.9043,
             "6. volume": 26986.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.92718614718615,
+            "cust. regression slope": 0.026320346320346404
         },
         "2018-03-12": {
             "1. open": 46.12,
@@ -495,7 +591,9 @@
             "5. adjusted close": 46.0541,
             "6. volume": 114780.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.34458874458875,
+            "cust. regression slope": -0.03290043290043297
         },
         "2018-03-13": {
             "1. open": 46.28,
@@ -505,7 +603,9 @@
             "5. adjusted close": 45.6846,
             "6. volume": 36933.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.6817316017316,
+            "cust. regression slope": -0.0857575757575761
         },
         "2018-03-14": {
             "1. open": 45.81,
@@ -515,7 +615,9 @@
             "5. adjusted close": 45.8144,
             "6. volume": 31735.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.019393939393936,
+            "cust. regression slope": -0.13419913419913446
         },
         "2018-03-15": {
             "1. open": 45.99,
@@ -525,7 +627,9 @@
             "5. adjusted close": 45.5347,
             "6. volume": 87314.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.123549783549784,
+            "cust. regression slope": -0.14173160173160199
         },
         "2018-03-16": {
             "1. open": 47.08,
@@ -535,7 +639,9 @@
             "5. adjusted close": 46.8931,
             "6. volume": 248284.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.59116883116883,
+            "cust. regression slope": -0.18863636363636405
         },
         "2018-03-19": {
             "1. open": 46.88,
@@ -545,7 +651,9 @@
             "5. adjusted close": 45.9043,
             "6. volume": 658434.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.691904761904766,
+            "cust. regression slope": -0.19047619047619072
         },
         "2018-03-20": {
             "1. open": 45.94,
@@ -555,7 +663,9 @@
             "5. adjusted close": 45.8144,
             "6. volume": 20026.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.59718614718614,
+            "cust. regression slope": -0.15653679653679672
         },
         "2018-03-21": {
             "1. open": 45.75,
@@ -565,7 +675,9 @@
             "5. adjusted close": 46.0242,
             "6. volume": 39359.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.50445887445888,
+            "cust. regression slope": -0.12114718614718593
         },
         "2018-03-22": {
             "1. open": 46.0,
@@ -575,7 +687,9 @@
             "5. adjusted close": 45.5647,
             "6. volume": 97017.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.26147186147187,
+            "cust. regression slope": -0.07153679653679607
         },
         "2018-03-23": {
             "1. open": 45.54,
@@ -585,7 +699,9 @@
             "5. adjusted close": 45.2451,
             "6. volume": 41657.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.97251082251082,
+            "cust. regression slope": -0.024134199134198807
         },
         "2018-03-26": {
             "1. open": 45.5,
@@ -595,7 +711,9 @@
             "5. adjusted close": 45.7844,
             "6. volume": 145875.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.83367965367965,
+            "cust. regression slope": 0.005800865800865846
         },
         "2018-03-27": {
             "1. open": 45.79,
@@ -605,7 +723,9 @@
             "5. adjusted close": 45.2351,
             "6. volume": 173084.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.623203463203474,
+            "cust. regression slope": 0.03341991341991388
         },
         "2018-03-28": {
             "1. open": 45.42,
@@ -615,7 +735,9 @@
             "5. adjusted close": 45.6546,
             "6. volume": 66654.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.577922077922075,
+            "cust. regression slope": 0.038766233766233824
         },
         "2018-03-29": {
             "1. open": 45.73,
@@ -625,7 +747,9 @@
             "5. adjusted close": 46.3837,
             "6. volume": 66669.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.75372294372294,
+            "cust. regression slope": 0.018549783549783688
         },
         "2018-04-02": {
             "1. open": 46.44,
@@ -635,7 +759,9 @@
             "5. adjusted close": 45.9443,
             "6. volume": 128532.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.82025974025974,
+            "cust. regression slope": 0.00792207792207813
         },
         "2018-04-03": {
             "1. open": 46.11,
@@ -645,7 +771,9 @@
             "5. adjusted close": 47.4324,
             "6. volume": 61133.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.23238095238096,
+            "cust. regression slope": -0.03309523809523802
         },
         "2018-04-04": {
             "1. open": 47.14,
@@ -655,7 +783,9 @@
             "5. adjusted close": 49.3002,
             "6. volume": 69109.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.11363636363637,
+            "cust. regression slope": -0.12337662337662307
         },
         "2018-04-05": {
             "1. open": 49.23,
@@ -665,7 +795,9 @@
             "5. adjusted close": 51.8271,
             "6. volume": 182830.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.52454545454545,
+            "cust. regression slope": -0.2606493506493506
         },
         "2018-04-06": {
             "1. open": 51.71,
@@ -675,7 +807,9 @@
             "5. adjusted close": 51.1979,
             "6. volume": 37474.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.7874025974026,
+            "cust. regression slope": -0.39707792207792225
         },
         "2018-04-09": {
             "1. open": 51.45,
@@ -685,7 +819,9 @@
             "5. adjusted close": 50.3389,
             "6. volume": 35412.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.53454545454546,
+            "cust. regression slope": -0.45850649350649353
         },
         "2018-04-10": {
             "1. open": 50.66,
@@ -695,7 +831,9 @@
             "5. adjusted close": 49.3102,
             "6. volume": 111341.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.85666666666667,
+            "cust. regression slope": -0.46880952380952373
         },
         "2018-04-11": {
             "1. open": 49.28,
@@ -705,7 +843,9 @@
             "5. adjusted close": 48.7908,
             "6. volume": 45416.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.96588744588745,
+            "cust. regression slope": -0.4561471861471862
         },
         "2018-04-12": {
             "1. open": 48.92,
@@ -715,7 +855,9 @@
             "5. adjusted close": 48.9206,
             "6. volume": 41254.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.95437229437229,
+            "cust. regression slope": -0.42021645021645027
         },
         "2018-04-13": {
             "1. open": 49.13,
@@ -725,7 +867,9 @@
             "5. adjusted close": 48.5411,
             "6. volume": 31192.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.689177489177496,
+            "cust. regression slope": -0.3486580086580083
         },
         "2018-04-16": {
             "1. open": 48.77,
@@ -735,7 +879,9 @@
             "5. adjusted close": 48.0617,
             "6. volume": 42209.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.27930735930736,
+            "cust. regression slope": -0.2668398268398267
         },
         "2018-04-17": {
             "1. open": 48.2,
@@ -745,7 +891,9 @@
             "5. adjusted close": 48.2814,
             "6. volume": 73898.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.77367965367965,
+            "cust. regression slope": -0.1634848484848487
         },
         "2018-04-18": {
             "1. open": 48.43,
@@ -755,7 +903,9 @@
             "5. adjusted close": 47.822,
             "6. volume": 36784.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.11761904761905,
+            "cust. regression slope": -0.047619047619047714
         },
         "2018-04-19": {
             "1. open": 47.81,
@@ -765,7 +915,9 @@
             "5. adjusted close": 46.2039,
             "6. volume": 62200.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.074761904761914,
+            "cust. regression slope": 0.09952380952380975
         },
         "2018-04-20": {
             "1. open": 46.36,
@@ -775,7 +927,9 @@
             "5. adjusted close": 45.5747,
             "6. volume": 152616.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.799696969696974,
+            "cust. regression slope": 0.2779004329004329
         },
         "2018-04-23": {
             "1. open": 45.68,
@@ -785,7 +939,9 @@
             "5. adjusted close": 45.6546,
             "6. volume": 86770.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.789523809523814,
+            "cust. regression slope": 0.40404761904761893
         },
         "2018-04-24": {
             "1. open": 45.73,
@@ -795,7 +951,9 @@
             "5. adjusted close": 45.8643,
             "6. volume": 76249.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.18108225108226,
+            "cust. regression slope": 0.45586580086580075
         },
         "2018-04-25": {
             "1. open": 46.06,
@@ -805,7 +963,9 @@
             "5. adjusted close": 45.5747,
             "6. volume": 35012.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.99333333333334,
+            "cust. regression slope": 0.4188095238095236
         },
         "2018-04-26": {
             "1. open": 45.64,
@@ -815,7 +975,9 @@
             "5. adjusted close": 45.5947,
             "6. volume": 76414.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.90246753246754,
+            "cust. regression slope": 0.37454545454545446
         },
         "2018-04-27": {
             "1. open": 45.65,
@@ -825,7 +987,9 @@
             "5. adjusted close": 45.7944,
             "6. volume": 13741.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.90125541125542,
+            "cust. regression slope": 0.3282900432900433
         },
         "2018-04-30": {
             "1. open": 45.75,
@@ -835,7 +999,9 @@
             "5. adjusted close": 44.8256,
             "6. volume": 37830.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.61705627705628,
+            "cust. regression slope": 0.32307359307359307
         },
         "2018-05-01": {
             "1. open": 45.03,
@@ -845,7 +1011,9 @@
             "5. adjusted close": 44.9455,
             "6. volume": 63102.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.42008658008659,
+            "cust. regression slope": 0.31192640692640694
         },
         "2018-05-02": {
             "1. open": 45.06,
@@ -855,7 +1023,9 @@
             "5. adjusted close": 45.6646,
             "6. volume": 84473.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.55329004329005,
+            "cust. regression slope": 0.2596320346320349
         },
         "2018-05-03": {
             "1. open": 45.71,
@@ -865,7 +1035,9 @@
             "5. adjusted close": 45.8444,
             "6. volume": 36712.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 44.77437229437229,
+            "cust. regression slope": 0.20049783549783554
         },
         "2018-05-04": {
             "1. open": 46.36,
@@ -875,7 +1047,9 @@
             "5. adjusted close": 46.2938,
             "6. volume": 143852.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.123246753246754,
+            "cust. regression slope": 0.1325974025974028
         },
         "2018-05-07": {
             "1. open": 46.05,
@@ -885,7 +1059,9 @@
             "5. adjusted close": 47.1128,
             "6. volume": 141244.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 45.780129870129876,
+            "cust. regression slope": 0.026818181818182036
         },
         "2018-05-08": {
             "1. open": 47.31,
@@ -895,7 +1071,9 @@
             "5. adjusted close": 47.822,
             "6. volume": 40785.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.59134199134199,
+            "cust. regression slope": -0.08906926406926417
         },
         "2018-05-09": {
             "1. open": 48.0,
@@ -905,7 +1083,9 @@
             "5. adjusted close": 47.1927,
             "6. volume": 122824.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 46.98099567099567,
+            "cust. regression slope": -0.13463203463203477
         },
         "2018-05-10": {
             "1. open": 47.4,
@@ -915,7 +1095,9 @@
             "5. adjusted close": 48.1715,
             "6. volume": 129569.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 47.505497835497835,
+            "cust. regression slope": -0.18303030303030293
         },
         "2018-05-11": {
             "1. open": 48.24,
@@ -925,7 +1107,9 @@
             "5. adjusted close": 48.3114,
             "6. volume": 54674.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.00125541125541,
+            "cust. regression slope": -0.2267099567099566
         },
         "2018-05-14": {
             "1. open": 48.56,
@@ -935,7 +1119,9 @@
             "5. adjusted close": 48.5711,
             "6. volume": 28953.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 48.51891774891775,
+            "cust. regression slope": -0.2730086580086579
         },
         "2018-05-15": {
             "1. open": 48.57,
@@ -945,7 +1131,9 @@
             "5. adjusted close": 49.2403,
             "6. volume": 209640.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.08909090909091,
+            "cust. regression slope": -0.3170129870129868
         },
         "2018-05-16": {
             "1. open": 49.31,
@@ -955,7 +1143,9 @@
             "5. adjusted close": 48.5511,
             "6. volume": 52104.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.36597402597402,
+            "cust. regression slope": -0.3263636363636363
         },
         "2018-05-17": {
             "1. open": 48.65,
@@ -965,7 +1155,9 @@
             "5. adjusted close": 49.1104,
             "6. volume": 72826.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.734632034632035,
+            "cust. regression slope": -0.345151515151515
         },
         "2018-05-18": {
             "1. open": 49.26,
@@ -975,7 +1167,9 @@
             "5. adjusted close": 49.5898,
             "6. volume": 21226.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 49.98034632034632,
+            "cust. regression slope": -0.3315800865800865
         },
         "2018-05-22": {
             "1. open": 49.5,
@@ -985,7 +1179,9 @@
             "5. adjusted close": 50.7884,
             "6. volume": 64254.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.422294372294374,
+            "cust. regression slope": -0.33502164502164494
         },
         "2018-05-23": {
             "1. open": 50.51,
@@ -995,7 +1191,9 @@
             "5. adjusted close": 51.3976,
             "6. volume": 54149.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 50.96290043290044,
+            "cust. regression slope": -0.3536796536796535
         },
         "2018-05-24": {
             "1. open": 52.22,
@@ -1005,7 +1203,9 @@
             "5. adjusted close": 51.3477,
             "6. volume": 112691.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 51.34419913419914,
+            "cust. regression slope": -0.35192640692640664
         },
         "2018-05-25": {
             "1. open": 51.39,
@@ -1015,7 +1215,9 @@
             "5. adjusted close": 52.2566,
             "6. volume": 92358.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 51.87290043290043,
+            "cust. regression slope": -0.36653679653679644
         },
         "2018-05-28": {
             "1. open": 52.5,
@@ -1025,7 +1227,9 @@
             "5. adjusted close": 53.0356,
             "6. volume": 23842.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.5578354978355,
+            "cust. regression slope": -0.40387445887445894
         },
         "2018-05-29": {
             "1. open": 52.98,
@@ -1035,7 +1239,9 @@
             "5. adjusted close": 51.5075,
             "6. volume": 33760.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.76307359307359,
+            "cust. regression slope": -0.3955411255411256
         },
         "2018-05-30": {
             "1. open": 51.69,
@@ -1045,7 +1251,9 @@
             "5. adjusted close": 52.13,
             "6. volume": 146525.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.90861471861472,
+            "cust. regression slope": -0.36653679653679677
         },
         "2018-05-31": {
             "1. open": 52.01,
@@ -1055,7 +1263,9 @@
             "5. adjusted close": 51.59,
             "6. volume": 42608.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.91406926406927,
+            "cust. regression slope": -0.33303030303030323
         },
         "2018-06-01": {
             "1. open": 51.8,
@@ -1065,7 +1275,9 @@
             "5. adjusted close": 51.5,
             "6. volume": 144879.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.81536796536796,
+            "cust. regression slope": -0.2869913419913422
         },
         "2018-06-04": {
             "1. open": 51.92,
@@ -1075,7 +1287,9 @@
             "5. adjusted close": 51.57,
             "6. volume": 42082.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.68112554112554,
+            "cust. regression slope": -0.23781385281385328
         },
         "2018-06-05": {
             "1. open": 51.65,
@@ -1085,7 +1299,9 @@
             "5. adjusted close": 52.69,
             "6. volume": 129040.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.86281385281385,
+            "cust. regression slope": -0.2291774891774892
         },
         "2018-06-06": {
             "1. open": 52.78,
@@ -1095,7 +1311,9 @@
             "5. adjusted close": 52.32,
             "6. volume": 57488.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.73493506493506,
+            "cust. regression slope": -0.17305194805194823
         },
         "2018-06-07": {
             "1. open": 52.44,
@@ -1105,7 +1323,9 @@
             "5. adjusted close": 52.02,
             "6. volume": 50601.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.50138528138528,
+            "cust. regression slope": -0.11060606060606068
         },
         "2018-06-08": {
             "1. open": 51.97,
@@ -1115,7 +1335,9 @@
             "5. adjusted close": 52.55,
             "6. volume": 95165.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.398528138528135,
+            "cust. regression slope": -0.0663203463203463
         },
         "2018-06-11": {
             "1. open": 52.74,
@@ -1125,7 +1347,9 @@
             "5. adjusted close": 52.83,
             "6. volume": 24111.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.46995670995671,
+            "cust. regression slope": -0.0563203463203461
         },
         "2018-06-12": {
             "1. open": 52.95,
@@ -1135,7 +1359,9 @@
             "5. adjusted close": 52.68,
             "6. volume": 39559.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.536190476190484,
+            "cust. regression slope": -0.05333333333333309
         },
         "2018-06-13": {
             "1. open": 52.81,
@@ -1145,7 +1371,9 @@
             "5. adjusted close": 53.1,
             "6. volume": 53658.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 52.67038961038962,
+            "cust. regression slope": -0.05525974025973974
         },
         "2018-06-14": {
             "1. open": 53.15,
@@ -1155,7 +1383,9 @@
             "5. adjusted close": 53.68,
             "6. volume": 60478.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 53.05086580086581,
+            "cust. regression slope": -0.09573593073593022
         },
         "2018-06-15": {
             "1. open": 53.4,
@@ -1165,7 +1395,9 @@
             "5. adjusted close": 53.63,
             "6. volume": 47675.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 53.49826839826841,
+            "cust. regression slope": -0.15424242424242385
         },
         "2018-06-18": {
             "1. open": 53.58,
@@ -1175,7 +1407,9 @@
             "5. adjusted close": 53.97,
             "6. volume": 33843.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 53.78242424242425,
+            "cust. regression slope": -0.1703463203463199
         },
         "2018-06-19": {
             "1. open": 53.64,
@@ -1185,7 +1419,9 @@
             "5. adjusted close": 53.54,
             "6. volume": 51049.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 53.96571428571429,
+            "cust. regression slope": -0.18214285714285686
         },
         "2018-06-20": {
             "1. open": 53.66,
@@ -1195,7 +1431,9 @@
             "5. adjusted close": 52.89,
             "6. volume": 53273.0,
             "7. dividend amount": 0.0,
-            "8. split coefficient": 1.0
+            "8. split coefficient": 1.0,
+            "cust. regression origin": 53.84766233766235,
+            "cust. regression slope": -0.15201298701298666
         }
     }
 }
