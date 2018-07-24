@@ -15,6 +15,7 @@ import csv
 import urllib.request
 import urllib.error
 import scipy.ndimage
+import scipy.stats
 import multiprocessing
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -245,7 +246,7 @@ def tech_linear_regression(symbol, period):
 		json.dump(data, fo, sort_keys=True,
 			indent=4, separators=(',', ': '))
 	
-	myprint(datay)
+	#myprint(datay)
 	
 def tech_linear_regression_all(period):
 	symbols = os.walk(os.path.join(DATA_FOLDER, "prices"))
@@ -253,10 +254,73 @@ def tech_linear_regression_all(period):
 	total = len(symbols)
 	count = 1
 	for symbol in symbols:
-		myprint("[" + count + "/" + total + "] linear regression for " + symbol)
+		myprint("[" + str(count) + "/" + str(total) + "] linear regression for " + symbol)
 		tech_linear_regression(symbol, period)
 		count += 1
+	
+def cmp_pearson_corelation_all(compare_to_symbol):
+	cmp_data, cmp_pricefile = get_latest_json(compare_to_symbol)
+	cmp_price_data = cmp_data[JSON_PRICE_ROOT]
+	cmp_sorted_dates = sorted(cmp_price_data.keys(), reverse=True) # earliest first
+	
+	symbols = os.walk(os.path.join(DATA_FOLDER, "prices"))
+	symbols = next(symbols)[1]
+	
+	result = []
+	
+	for symbol in symbols:
+		other_data, other_pricefile = get_latest_json(symbol)
+		if other_data is None or JSON_PRICE_ROOT not in other_data:
+			myprint("Invalid data for " + other_pricefile, 4)
+			continue
+		other_price_data = other_data[JSON_PRICE_ROOT]
+		other_sorted_dates = sorted(other_price_data.keys(), reverse=True)
+		closing_x = []
+		closing_y = []
+		matching_period_count = 0
 		
+		for cur_date in cmp_sorted_dates:
+			if cur_date not in other_price_data:
+				myprint("Could not find " + cur_date + " in " + other_pricefile, 4)
+				break
+			#myprint("cur_date " + str(cur_date) + " between " + my_pricefile + " and " + other_pricefile)
+			matching_period_count += 1
+			
+			closing_x.append(cmp_price_data[cur_date][JSON_CLOSE])
+			closing_y.append(other_price_data[cur_date][JSON_CLOSE])
+		
+		if len(closing_x) <= 0:
+			myprint("Empty")
+			continue
+		
+		cmp_start_price = closing_x[-1]
+		cmp_other_price = closing_y[-1]
+		
+		cmp_prev_price = None
+		other_prev_price = None
+		result_x = []
+		result_y = []
+		for i in range(matching_period_count-1, 0, -1):
+			cur_price_x = closing_x[i]
+			cur_price_y = closing_y[i]
+			
+			if cmp_prev_price is not None:
+				x = 100.0 if cmp_prev_price == 0 else (cmp_prev_price - cur_price_x) / cmp_prev_price
+				y = 100.0 if other_prev_price == 0 else (other_prev_price - cur_price_y) / other_prev_price
+				result_x.append(x)
+				result_y.append(y)
+			
+			cmp_prev_price = cur_price_x
+			other_prev_price = cur_price_y
+		
+		coef, prob = scipy.stats.pearsonr(result_x, result_y)
+		result.append((other_pricefile, coef, prob, matching_period_count))
+	
+	result = sorted(result, key=itemgetter(1))
+	myprint(result, 4)
+	return result
+	
+	
 def cmp_lin_reg(symbol, compare_to, period):
 	my_data, my_pricefile = get_latest_json(params["single_symbol"])
 	
@@ -290,7 +354,7 @@ def cmp_lin_reg(symbol, compare_to, period):
 			diff = (other_slope - ideal_slope) * (other_slope - ideal_slope) # squared diff
 			total_diff += diff
 			matching_period_count += 1
-		diffs.append((other_pricefile, total_diff, matching_period_count))
+		diffs.append((other_pricefile, 0 if matching_period_count == 0 else total_diff / matching_period_count, matching_period_count))
 	diffs = sorted(diffs, key=itemgetter(1))
 	myprint(diffs, 4)
 	return diffs
@@ -305,6 +369,8 @@ def do_actions(actions, params):
 		tech_linear_regression_all(params["tech_period"])
 	if "tech_lin_reg" in actions:
 		tech_linear_regression(params["single_symbol"], params["tech_period"])
+	if "cmp_pearson_corelation_all" in actions:
+		cmp_pearson_corelation_all(params["single_symbol"])
 	if "cmp_lin_reg" in actions:
 		symbols = os.walk(os.path.join(DATA_FOLDER, "prices"))
 		symbols = next(symbols)[1]
@@ -320,18 +386,19 @@ def do_actions(actions, params):
 if __name__ == '__main__':
 	actions = [
 		#"cmp_lin_reg",
+		"cmp_pearson_corelation_all", # calculate the pearson correlation factor single_symbol in params to all other symbols in prices folder
 		#"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
-		"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
-		"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
+		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
+		#"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
 		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
-		#"single_symbol" : "BNS.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
-		"single_symbol" : "MBA.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
-		"tech_period" : 14, # days to calculate the moving technical (moving average, moving regression, etc.)
+		"single_symbol" : "BNS.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		#"single_symbol" : "TV.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		"tech_period" : 100, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting
 		"plot_period" : 140, # length of time to go back in time from plot_start_date
 		"nothing" : None # don't have to deal with last ,

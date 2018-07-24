@@ -1,0 +1,86 @@
+bbn-un.to : Brookfield business partners
+	- Investment company, primary current investment in 
+		business services (real estate, fuel...), construction, energy and industrial operations
+	- 2018-07-09 : current matching algo suggest this company moves in opposite direction from bns.to
+	- around 50$
+	- market cap 4.7b
+	- assets 16.4b
+	- ebitda 191m (us)
+	- ffo 138m (us)
+	- subsidies : BGIS, Royal LePage, Greenergy, Ontario Gaming GTA, Nova Cold Logistics
+		- GrafTech, NAPalladium, Hammerstone, armtec
+	- 0.65% divident ?
+	- 108m outstanding shares
+	- float 66.1m
+
+
+
+
+
+
+ECN.to : ECN capital corps
+	- Financial business services company, 
+		home improvement, housing, credit card & paiement services
+	- 1.16% divident
+	- market cap 1.142m
+	- around 3-4$
+	- shares outstanding 330m, 362,118,837 ?
+	- eps (0.21)
+	-
+
+
+
+XCT.to : exactEarth Ltd.
+	- Score against BCE ('data\\prices\\XCT.to\\20180621-091508-adj.json', 0.35691184947808297, 43)
+	- data services company delivering near real-time global location-based maritime vessel tracking information utilizing patented Satellite AIS detection technology.
+	
+
+
+
+DRG-UN.to : Dream Global Real Estate Investment Trust
+	- Score against POW ('data\\prices\\DRG-UN.to\\20180621-090440-adj.json', 0.010450909820498566, 117)
+	- The company primarily owns and operates commercial and mixed-use properties in Germany.
+	- Market Cap 2.78b
+	- EBITDA : 228.12m
+	- Diluted EPS : 1.94
+	- Dividend : 5.56%
+	- outstanding : 191.34m
+	- float 173.01m
+	- avg volume : 399k
+	- avg price of 13-15$
+	- similar : DIR-UN.to (dream industrial REIT), D-UN.to (dream office REIT), AX-UN.to (artis real estate investment), CUF-UN.to (cominar r e un?)
+	
+	
+	
+	
+REI-UN.to : RioCan Real Estate Investment Trust
+	- Initial Test with person correlation coefficient yielded ('data\\prices\\REI-UN.to\\20180621-092506-adj.json', 0.0018159054618864913, 0.90111966533275112, 4686)
+	- More than 290 properties across Canada translate to a total of 45 million square feet of leasable property in retail.
+	- market cap 7.76b
+	- EBITDA 727.45m
+	- EPS : 2.11
+	- dividend : 5.75%
+	- outstanding 314.16m
+	- float 315.89m
+	- 22 to 25$
+	- also watch : HR-UN.to (H&R real estate inv trust), D-UN.to, CAR-UN.to (CDN apartment), REF-UN.to (CDN real estate), CUF-UN.to
+
+	
+
+
+PLI.TO : Prometic Life Sciences Inc.
+	- Score against BNS 100 days ('data\\prices\\PLI.to\\20180621-093211-adj.json', 0.0027782133285186475, 46),
+	- Prometic is a biopharmaceutical corporation with two drug discovery platforms focusing on unmet medical needs in the field of fibrosis and orphan diseases.
+	- 50 cents stock
+	- market cap 495.51m
+	- float 627.91m
+	- outstanding 718.12m
+	- EBITDA -120.6m
+	- Diluted EPS -0.17
+
+
+EMP-A.to : Emprie Company Limited
+	- Score against BNS 100 days ('data\\prices\\EMP-A.to\\20180621-092342-adj.json', 0.0029209869611097434, 46),
+	- vente au détail de produits alimentaires et les activités immobilières connexes, par l’entremise de notre filiale entièrement détenue, Sobeys Inc., et une participation de 41,5 % comptabilisée selon la méthode de la mise en équivalence dans le FPI Crombie.
+	- around 20 - 30$
+	- 
