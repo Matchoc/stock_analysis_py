@@ -1,0 +1,361 @@
+[
+    [
+        "\ufeffCANADIAN WESTERN BANK  (CWB) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in October. CAD in millions except per share data.",
+        "2013-10",
+        "2014-10",
+        "2015-10",
+        "2016-10",
+        "2017-10",
+        "TTM"
+    ],
+    [
+        "Revenue"
+    ],
+    [
+        "Interest income"
+    ],
+    [
+        "Loans and Leases",
+        "735",
+        "800",
+        "855",
+        "928",
+        "994",
+        "1076"
+    ],
+    [
+        "Deposits with banks",
+        "2",
+        "5",
+        "3",
+        "5",
+        "8",
+        "6"
+    ],
+    [
+        "Other assets",
+        "45",
+        "44",
+        "40",
+        "29",
+        "25",
+        "32"
+    ],
+    [
+        "Total interest income",
+        "782",
+        "849",
+        "898",
+        "962",
+        "1027",
+        "1114"
+    ],
+    [
+        "Interest expense"
+    ],
+    [
+        "Deposits",
+        "280",
+        "311",
+        "317",
+        "346",
+        "356",
+        "394"
+    ],
+    [
+        "Other expense",
+        "32",
+        "33",
+        "38",
+        "30",
+        "29",
+        "36"
+    ],
+    [
+        "Total interest expense",
+        "313",
+        "344",
+        "355",
+        "377",
+        "385",
+        "430"
+    ],
+    [
+        "Net interest income",
+        "469",
+        "506",
+        "543",
+        "585",
+        "642",
+        "684"
+    ],
+    [
+        "Noninterest revenue"
+    ],
+    [
+        "Commissions and fees",
+        "56",
+        "70",
+        "67",
+        "70",
+        "75",
+        "72"
+    ],
+    [
+        "Lending and deposit-related fees",
+        "10",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Securities gains (losses)",
+        "15",
+        "14",
+        "-4",
+        "-3",
+        "1",
+        "0"
+    ],
+    [
+        "Credit card income",
+        "22",
+        "25",
+        "28",
+        "31",
+        "34",
+        "33"
+    ],
+    [
+        "Insurance premium",
+        "16",
+        "21",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other income",
+        "-25",
+        "-17",
+        "-23",
+        "-25",
+        "-26",
+        "-20"
+    ],
+    [
+        "Total noninterest revenue",
+        "95",
+        "113",
+        "67",
+        "73",
+        "84",
+        "85"
+    ],
+    [
+        "Total net revenue",
+        "564",
+        "619",
+        "611",
+        "658",
+        "727",
+        "769"
+    ],
+    [
+        "Provisions for credit losses",
+        "28",
+        "25",
+        "31",
+        "79",
+        "51",
+        "45"
+    ],
+    [
+        "Noninterest expenses"
+    ],
+    [
+        "Compensation and benefits",
+        "172",
+        "188",
+        "195",
+        "207",
+        "220",
+        "228"
+    ],
+    [
+        "\"Tech",
+        " communication and equipment\"",
+        "43",
+        "49",
+        "13",
+        "53",
+        "60",
+        "62"
+    ],
+    [
+        "Professional and outside services",
+        "",
+        "",
+        "9",
+        "8",
+        "",
+        ""
+    ],
+    [
+        "Amortization of intangibles",
+        "",
+        "",
+        "5",
+        "6",
+        "",
+        ""
+    ],
+    [
+        "\"Merger",
+        " acquisition and restructuring\"",
+        "",
+        "",
+        "",
+        "9",
+        "18",
+        "19"
+    ],
+    [
+        "Other special charges",
+        "",
+        "52",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other expenses",
+        "47",
+        "-52",
+        "72",
+        "30",
+        "46",
+        "48"
+    ],
+    [
+        "Total noninterest expenses",
+        "262",
+        "237",
+        "293",
+        "313",
+        "345",
+        "358"
+    ],
+    [
+        "Income (loss) from cont ops before taxes",
+        "274",
+        "357",
+        "286",
+        "266",
+        "330",
+        "366"
+    ],
+    [
+        "Provision (benefit) for taxes",
+        "64",
+        "74",
+        "71",
+        "68",
+        "82",
+        "92"
+    ],
+    [
+        "Other income (expense)",
+        "-8",
+        "-53",
+        "-1",
+        "-10",
+        "-19",
+        "-20"
+    ],
+    [
+        "Income from discontinued ops",
+        "",
+        "",
+        "112",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Net income",
+        "202",
+        "230",
+        "325",
+        "188",
+        "229",
+        "254"
+    ],
+    [
+        "Preferred dividend",
+        "15",
+        "12",
+        "6",
+        "11",
+        "14",
+        "14"
+    ],
+    [
+        "Net income available to common shareholders",
+        "187",
+        "219",
+        "320",
+        "178",
+        "214",
+        "240"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "2.36",
+        "2.73",
+        "3.97",
+        "2.13",
+        "2.43",
+        "2.71"
+    ],
+    [
+        "Diluted",
+        "2.35",
+        "2.70",
+        "3.97",
+        "2.13",
+        "2.42",
+        "2.69"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "79",
+        "80",
+        "80",
+        "83",
+        "88",
+        "89"
+    ],
+    [
+        "Diluted",
+        "80",
+        "81",
+        "81",
+        "83",
+        "89",
+        "89"
+    ]
+]

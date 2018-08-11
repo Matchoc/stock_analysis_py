@@ -1,0 +1,204 @@
+[
+    [
+        "\ufeffLINAMAR CORP  (LNR) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "3595",
+        "4172",
+        "5162",
+        "6006",
+        "6546",
+        "7176"
+    ],
+    [
+        "Cost of revenue",
+        "3089",
+        "3507",
+        "4310",
+        "5003",
+        "5467",
+        "5991"
+    ],
+    [
+        "Gross profit",
+        "506",
+        "664",
+        "853",
+        "1003",
+        "1079",
+        "1184"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "183",
+        "218",
+        "266",
+        "325",
+        "352",
+        "400"
+    ],
+    [
+        "Other operating expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "-23"
+    ],
+    [
+        "Total operating expenses",
+        "183",
+        "218",
+        "266",
+        "325",
+        "352",
+        "377"
+    ],
+    [
+        "Operating income",
+        "323",
+        "446",
+        "587",
+        "677",
+        "727",
+        "807"
+    ],
+    [
+        "Interest Expense",
+        "31",
+        "24",
+        "26",
+        "36",
+        "29",
+        "45"
+    ],
+    [
+        "Other income (expense)",
+        "-2",
+        "4",
+        "20",
+        "31",
+        "-5",
+        "-9"
+    ],
+    [
+        "Income before taxes",
+        "291",
+        "426",
+        "581",
+        "673",
+        "693",
+        "753"
+    ],
+    [
+        "Provision for income taxes",
+        "61",
+        "105",
+        "144",
+        "150",
+        "143",
+        "157"
+    ],
+    [
+        "Net income from continuing operations",
+        "230",
+        "321",
+        "437",
+        "523",
+        "549",
+        "596"
+    ],
+    [
+        "Other",
+        "",
+        "",
+        "",
+        "-0",
+        "",
+        ""
+    ],
+    [
+        "Net income",
+        "230",
+        "321",
+        "437",
+        "522",
+        "549",
+        "596"
+    ],
+    [
+        "Net income available to common shareholders",
+        "230",
+        "321",
+        "437",
+        "522",
+        "549",
+        "596"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "3.55",
+        "4.95",
+        "6.71",
+        "8.01",
+        "8.41",
+        "9.12"
+    ],
+    [
+        "Diluted",
+        "3.52",
+        "4.90",
+        "6.63",
+        "7.92",
+        "8.32",
+        "9.02"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "65",
+        "65",
+        "65",
+        "65",
+        "65",
+        "65"
+    ],
+    [
+        "Diluted",
+        "65",
+        "65",
+        "66",
+        "66",
+        "66",
+        "66"
+    ],
+    [
+        "EBITDA",
+        "540",
+        "693",
+        "881",
+        "1042",
+        "1042",
+        "1138"
+    ]
+]

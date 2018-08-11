@@ -1,0 +1,214 @@
+[
+    [
+        "\ufeffCHEMTRADE LOGISTICS INCOME FUND  (CHE.UN) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "836",
+        "1203",
+        "1365",
+        "1067",
+        "1469",
+        "1574"
+    ],
+    [
+        "Cost of revenue",
+        "711",
+        "1068",
+        "1281",
+        "985",
+        "1278",
+        "1391"
+    ],
+    [
+        "Gross profit",
+        "125",
+        "135",
+        "83",
+        "82",
+        "191",
+        "183"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "79",
+        "115",
+        "114",
+        "77",
+        "107",
+        ""
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "",
+        "",
+        "",
+        "8",
+        "3",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "0",
+        "1",
+        "1",
+        "-8",
+        "-2",
+        "176"
+    ],
+    [
+        "Total operating expenses",
+        "80",
+        "116",
+        "115",
+        "78",
+        "109",
+        "176"
+    ],
+    [
+        "Operating income",
+        "45",
+        "19",
+        "-32",
+        "5",
+        "82",
+        "7"
+    ],
+    [
+        "Interest Expense",
+        "20",
+        "45",
+        "41",
+        "43",
+        "69",
+        "70"
+    ],
+    [
+        "Other income (expense)",
+        "-29",
+        "-29",
+        "7",
+        "-41",
+        "-27",
+        "-15"
+    ],
+    [
+        "Income before taxes",
+        "-3",
+        "-55",
+        "-66",
+        "-79",
+        "-14",
+        "-77"
+    ],
+    [
+        "Provision for income taxes",
+        "-9",
+        "-34",
+        "-18",
+        "-78",
+        "-93",
+        "-102"
+    ],
+    [
+        "Net income from continuing operations",
+        "5",
+        "-21",
+        "-48",
+        "-1",
+        "79",
+        "24"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "42",
+        "",
+        "-11",
+        "69",
+        "1"
+    ],
+    [
+        "Net income",
+        "5",
+        "21",
+        "-48",
+        "-13",
+        "147",
+        "25"
+    ],
+    [
+        "Net income available to common shareholders",
+        "5",
+        "21",
+        "-48",
+        "-13",
+        "147",
+        "25"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.13",
+        "0.35",
+        "-0.69",
+        "-0.18",
+        "1.67",
+        "0.26"
+    ],
+    [
+        "Diluted",
+        "0.13",
+        "0.35",
+        "-0.69",
+        "-0.18",
+        "1.53",
+        "0.20"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "42",
+        "60",
+        "69",
+        "69",
+        "88",
+        "93"
+    ],
+    [
+        "Diluted",
+        "42",
+        "60",
+        "69",
+        "69",
+        "105",
+        "110"
+    ],
+    [
+        "EBITDA",
+        "95",
+        "158",
+        "123",
+        "111",
+        "260",
+        "208"
+    ]
+]

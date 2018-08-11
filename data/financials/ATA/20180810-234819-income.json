@@ -1,0 +1,204 @@
+[
+    [
+        "\ufeffATS AUTOMATION TOOLING SYSTEMS INC  (ATA) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in March. CAD in millions except per share data.",
+        "2014-03",
+        "2015-03",
+        "2016-03",
+        "2017-03",
+        "2018-03",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "683",
+        "936",
+        "1040",
+        "1011",
+        "1115",
+        "1115"
+    ],
+    [
+        "Cost of revenue",
+        "502",
+        "691",
+        "781",
+        "760",
+        "827",
+        "827"
+    ],
+    [
+        "Gross profit",
+        "182",
+        "245",
+        "259",
+        "251",
+        "288",
+        "288"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "121",
+        "178",
+        "182",
+        "179",
+        "203",
+        "203"
+    ],
+    [
+        "Total operating expenses",
+        "121",
+        "178",
+        "182",
+        "179",
+        "203",
+        "203"
+    ],
+    [
+        "Operating income",
+        "61",
+        "67",
+        "77",
+        "72",
+        "85",
+        "85"
+    ],
+    [
+        "Interest Expense",
+        "3",
+        "12",
+        "27",
+        "26",
+        "26",
+        "26"
+    ],
+    [
+        "Other income (expense)",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "2"
+    ],
+    [
+        "Income before taxes",
+        "58",
+        "55",
+        "50",
+        "46",
+        "62",
+        "62"
+    ],
+    [
+        "Provision for income taxes",
+        "9",
+        "16",
+        "11",
+        "11",
+        "14",
+        "14"
+    ],
+    [
+        "Net income from continuing operations",
+        "49",
+        "39",
+        "40",
+        "35",
+        "47",
+        "47"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "13",
+        "16",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other",
+        "-0",
+        "-0",
+        "-0",
+        "-0",
+        "-0",
+        "-0"
+    ],
+    [
+        "Net income",
+        "62",
+        "55",
+        "40",
+        "35",
+        "47",
+        "47"
+    ],
+    [
+        "Net income available to common shareholders",
+        "62",
+        "55",
+        "40",
+        "35",
+        "47",
+        "47"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.70",
+        "0.61",
+        "0.43",
+        "0.38",
+        "0.50",
+        "0.50"
+    ],
+    [
+        "Diluted",
+        "0.69",
+        "0.60",
+        "0.43",
+        "0.38",
+        "0.50",
+        "0.50"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "89",
+        "91",
+        "92",
+        "93",
+        "94",
+        "94"
+    ],
+    [
+        "Diluted",
+        "90",
+        "92",
+        "93",
+        "93",
+        "94",
+        "94"
+    ],
+    [
+        "EBITDA",
+        "80",
+        "108",
+        "107",
+        "97",
+        "114",
+        "114"
+    ]
+]

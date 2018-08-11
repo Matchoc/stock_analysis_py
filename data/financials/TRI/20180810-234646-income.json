@@ -1,0 +1,198 @@
+[
+    [
+        "\ufeffTHOMSON REUTERS CORP  (TRI) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenues"
+    ],
+    [
+        "Interest income",
+        "4",
+        "3",
+        "2",
+        "7",
+        "8",
+        ""
+    ],
+    [
+        "Total interest and dividend income",
+        "4",
+        "3",
+        "2",
+        "7",
+        "8",
+        ""
+    ],
+    [
+        "Interest expense",
+        "464",
+        "445",
+        "418",
+        "410",
+        "370",
+        "348"
+    ],
+    [
+        "\"Revenues",
+        " net of interest expense\"",
+        "-460",
+        "-442",
+        "-416",
+        "-403",
+        "-362",
+        "-348"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "Depreciation and amortization",
+        "1414",
+        "1425",
+        "1333",
+        "1239",
+        "1167",
+        "1163"
+    ],
+    [
+        "Other expenses",
+        "-1414",
+        "-1425",
+        "-1333",
+        "-1239",
+        "-1167",
+        "-1163"
+    ],
+    [
+        "Total noninterest expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Income before income taxes",
+        "-460",
+        "-442",
+        "-416",
+        "-403",
+        "-362",
+        "-348"
+    ],
+    [
+        "Income taxes",
+        "848",
+        "62",
+        "56",
+        "-15",
+        "-274",
+        "-276"
+    ],
+    [
+        "Other income (expense)",
+        "1435",
+        "2413",
+        "1727",
+        "1393",
+        "1486",
+        "1563"
+    ],
+    [
+        "Income from discontinued operations",
+        "10",
+        "",
+        "",
+        "2093",
+        "-3",
+        "-299"
+    ],
+    [
+        "Net income",
+        "137",
+        "1909",
+        "1255",
+        "3098",
+        "1395",
+        "1192"
+    ],
+    [
+        "Preferred dividends",
+        "3",
+        "3",
+        "2",
+        "2",
+        "2",
+        "2"
+    ],
+    [
+        "Net income available to common shareholders",
+        "134",
+        "1906",
+        "1253",
+        "3096",
+        "1393",
+        "1190"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.16",
+        "2.36",
+        "1.60",
+        "4.14",
+        "1.94",
+        "1.67"
+    ],
+    [
+        "Diluted",
+        "0.16",
+        "2.35",
+        "1.60",
+        "4.13",
+        "1.94",
+        "1.67"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "828",
+        "808",
+        "781",
+        "747",
+        "719",
+        "712"
+    ],
+    [
+        "Diluted",
+        "831",
+        "811",
+        "784",
+        "749",
+        "720",
+        "713"
+    ],
+    [
+        "EBITDA",
+        "3297",
+        "4285",
+        "3455",
+        "2999",
+        "3023",
+        "3105"
+    ]
+]

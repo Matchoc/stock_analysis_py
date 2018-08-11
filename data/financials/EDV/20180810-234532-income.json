@@ -1,0 +1,205 @@
+[
+    [
+        "\ufeffENDEAVOUR MINING CORP  (EDV) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "443",
+        "584",
+        "601",
+        "673",
+        "652",
+        "836"
+    ],
+    [
+        "Cost of revenue",
+        "437",
+        "510",
+        "496",
+        "512",
+        "535",
+        "661"
+    ],
+    [
+        "Gross profit",
+        "6",
+        "74",
+        "105",
+        "161",
+        "117",
+        "175"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "27",
+        "23",
+        "25",
+        "34",
+        "46",
+        "50"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "",
+        "",
+        "13",
+        "24",
+        "16",
+        "14"
+    ],
+    [
+        "Interest expense",
+        "16",
+        "28",
+        "30",
+        "25",
+        "11",
+        "15"
+    ],
+    [
+        "Other operating expenses",
+        "451",
+        "399",
+        "-6",
+        "85",
+        "144",
+        "136"
+    ],
+    [
+        "Total costs and expenses",
+        "494",
+        "450",
+        "63",
+        "168",
+        "217",
+        "215"
+    ],
+    [
+        "Income before income taxes",
+        "-488",
+        "-376",
+        "43",
+        "-6",
+        "-101",
+        "-40"
+    ],
+    [
+        "Provision for income taxes",
+        "-116",
+        "-48",
+        "7",
+        "43",
+        "33",
+        "62"
+    ],
+    [
+        "Net income from continuing operations",
+        "-372",
+        "-328",
+        "36",
+        "-49",
+        "-134",
+        "-103"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "",
+        "",
+        "-3",
+        "-44",
+        "-77"
+    ],
+    [
+        "Other",
+        "39",
+        "55",
+        "-17",
+        "-14",
+        "21",
+        "16"
+    ],
+    [
+        "Net income",
+        "-332",
+        "-274",
+        "18",
+        "-67",
+        "-156",
+        "-164"
+    ],
+    [
+        "Net income available to common shareholders",
+        "-332",
+        "-274",
+        "18",
+        "-67",
+        "-156",
+        "-164"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "-8.10",
+        "-6.60",
+        "0.42",
+        "-0.83",
+        "-1.59",
+        "-1.67"
+    ],
+    [
+        "Diluted",
+        "-8.10",
+        "-6.60",
+        "0.42",
+        "-0.83",
+        "-1.59",
+        "-1.67"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "41",
+        "41",
+        "43",
+        "81",
+        "99",
+        "105"
+    ],
+    [
+        "Diluted",
+        "41",
+        "41",
+        "43",
+        "81",
+        "99",
+        "106"
+    ],
+    [
+        "EBITDA",
+        "-376",
+        "-256",
+        "157",
+        "123",
+        "59",
+        "148"
+    ]
+]

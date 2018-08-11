@@ -1,0 +1,204 @@
+[
+    [
+        "\ufeffCAMECO CORP  (CCO) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "2439",
+        "2398",
+        "2754",
+        "2431",
+        "2157",
+        "2067"
+    ],
+    [
+        "Cost of revenue",
+        "1832",
+        "1760",
+        "2057",
+        "1968",
+        "1721",
+        "1685"
+    ],
+    [
+        "Gross profit",
+        "607",
+        "638",
+        "697",
+        "463",
+        "436",
+        "382"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "Research and development",
+        "7",
+        "5",
+        "7",
+        "5",
+        "6",
+        "2"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "185",
+        "176",
+        "187",
+        "207",
+        "163",
+        "145"
+    ],
+    [
+        "Interest expense",
+        "67",
+        "73",
+        "75",
+        "74",
+        "73",
+        "73"
+    ],
+    [
+        "Other operating expenses",
+        "120",
+        "503",
+        "508",
+        "332",
+        "402",
+        "423"
+    ],
+    [
+        "Total costs and expenses",
+        "379",
+        "757",
+        "776",
+        "618",
+        "644",
+        "644"
+    ],
+    [
+        "Income before income taxes",
+        "228",
+        "-119",
+        "-79",
+        "-154",
+        "-207",
+        "-262"
+    ],
+    [
+        "Provision for income taxes",
+        "-90",
+        "-175",
+        "-143",
+        "-94",
+        "-3",
+        "-55"
+    ],
+    [
+        "Net income from continuing operations",
+        "318",
+        "56",
+        "63",
+        "-60",
+        "-205",
+        "-207"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "127",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other",
+        "1",
+        "2",
+        "2",
+        "-2",
+        "-0",
+        "-0"
+    ],
+    [
+        "Net income",
+        "318",
+        "185",
+        "65",
+        "-62",
+        "-205",
+        "-207"
+    ],
+    [
+        "Net income available to common shareholders",
+        "318",
+        "185",
+        "65",
+        "-62",
+        "-205",
+        "-207"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.81",
+        "0.47",
+        "0.16",
+        "-0.16",
+        "-0.52",
+        "-0.52"
+    ],
+    [
+        "Diluted",
+        "0.81",
+        "0.47",
+        "0.16",
+        "-0.16",
+        "-0.52",
+        "-0.52"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "395",
+        "396",
+        "396",
+        "396",
+        "396",
+        "396"
+    ],
+    [
+        "Diluted",
+        "396",
+        "396",
+        "396",
+        "396",
+        "396",
+        "396"
+    ],
+    [
+        "EBITDA",
+        "578",
+        "292",
+        "308",
+        "292",
+        "196",
+        "153"
+    ]
+]

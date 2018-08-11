@@ -1,0 +1,223 @@
+[
+    [
+        "\ufeffMITEL NETWORKS CORP  (MNW) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-04",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "577",
+        "1104",
+        "1158",
+        "988",
+        "1059",
+        "1236"
+    ],
+    [
+        "Cost of revenue",
+        "256",
+        "514",
+        "544",
+        "456",
+        "480",
+        "528"
+    ],
+    [
+        "Gross profit",
+        "321",
+        "590",
+        "614",
+        "532",
+        "579",
+        "708"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "Research and development",
+        "56",
+        "118",
+        "131",
+        "96",
+        "104",
+        "134"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "221",
+        "345",
+        "363",
+        "340",
+        "368",
+        "430"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "20",
+        "73",
+        "55",
+        "71",
+        "83",
+        "85"
+    ],
+    [
+        "Other operating expenses",
+        "-20",
+        "-19",
+        "20",
+        "-96",
+        "-28",
+        "7"
+    ],
+    [
+        "Total operating expenses",
+        "277",
+        "516",
+        "570",
+        "411",
+        "527",
+        "656"
+    ],
+    [
+        "Operating income",
+        "44",
+        "74",
+        "44",
+        "121",
+        "52",
+        "52"
+    ],
+    [
+        "Interest Expense",
+        "20",
+        "21",
+        "32",
+        "17",
+        "19",
+        "32"
+    ],
+    [
+        "Other income (expense)",
+        "-23",
+        "-83",
+        "-43",
+        "-70",
+        "-102",
+        "-62"
+    ],
+    [
+        "Income before taxes",
+        "1",
+        "-30",
+        "-31",
+        "34",
+        "-69",
+        "-41"
+    ],
+    [
+        "Provision for income taxes",
+        "-9",
+        "-23",
+        "-11",
+        "-1",
+        "-20",
+        "-7"
+    ],
+    [
+        "Net income from continuing operations",
+        "10",
+        "-7",
+        "-21",
+        "35",
+        "-48",
+        "-34"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "-4",
+        "",
+        "",
+        "-252",
+        "-1",
+        ""
+    ],
+    [
+        "Net income",
+        "6",
+        "-7",
+        "-21",
+        "-217",
+        "-50",
+        "-34"
+    ],
+    [
+        "Net income available to common shareholders",
+        "6",
+        "-7",
+        "-21",
+        "-217",
+        "-50",
+        "-34"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.12",
+        "-0.08",
+        "-0.18",
+        "-1.79",
+        "-0.41",
+        "-0.29"
+    ],
+    [
+        "Diluted",
+        "0.11",
+        "-0.08",
+        "-0.18",
+        "-1.79",
+        "-0.41",
+        "-0.29"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "54",
+        "96",
+        "114",
+        "122",
+        "121",
+        "120"
+    ],
+    [
+        "Diluted",
+        "56",
+        "96",
+        "114",
+        "126",
+        "121",
+        "120"
+    ],
+    [
+        "EBITDA",
+        "57",
+        "67",
+        "100",
+        "151",
+        "26",
+        "110"
+    ]
+]

@@ -37,7 +37,7 @@ JSON_PRICE_ROOT = "Time Series (Daily)"
 JSON_CLOSE = "4. close"
 JSON_REGRESSION_SLOPE = "cust. regression slope"
 JSON_REGRESSION_ORIGIN = "cust. regression origin"
-PRINT_LEVEL=0
+PRINT_LEVEL=2
 
 
 ###############################################################################
@@ -386,12 +386,12 @@ def do_actions(actions, params):
 if __name__ == '__main__':
 	actions = [
 		#"cmp_lin_reg",
-		"cmp_pearson_corelation_all", # calculate the pearson correlation factor single_symbol in params to all other symbols in prices folder
+		#"cmp_pearson_corelation_all", # calculate the pearson correlation factor single_symbol in params to all other symbols in prices folder
 		#"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
 		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
 		#"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
-		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
+		"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]

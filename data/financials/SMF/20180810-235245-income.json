@@ -1,0 +1,195 @@
+[
+    [
+        "\ufeffSEMAFO INC  (SMF) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "227",
+        "289",
+        "300",
+        "300",
+        "259",
+        "254"
+    ],
+    [
+        "Cost of revenue",
+        "125",
+        "149",
+        "128",
+        "132",
+        "134",
+        "140"
+    ],
+    [
+        "Gross profit",
+        "101",
+        "140",
+        "173",
+        "169",
+        "125",
+        "114"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "24",
+        "21",
+        "19",
+        "21",
+        "18",
+        "21"
+    ],
+    [
+        "Depreciation and amortization",
+        "58",
+        "72",
+        "88",
+        "78",
+        "95",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "19",
+        "7",
+        "11",
+        "10",
+        "-12",
+        "91"
+    ],
+    [
+        "Total costs and expenses",
+        "101",
+        "100",
+        "118",
+        "109",
+        "102",
+        "113"
+    ],
+    [
+        "Income before income taxes",
+        "0",
+        "40",
+        "55",
+        "59",
+        "23",
+        "2"
+    ],
+    [
+        "Provision for income taxes",
+        "6",
+        "20",
+        "24",
+        "18",
+        "-1",
+        "1"
+    ],
+    [
+        "Net income from continuing operations",
+        "-6",
+        "19",
+        "31",
+        "41",
+        "24",
+        "1"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "-78",
+        "-2",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other",
+        "-1",
+        "-13",
+        "-6",
+        "-7",
+        "-4",
+        "-2"
+    ],
+    [
+        "Net income",
+        "-85",
+        "4",
+        "25",
+        "34",
+        "20",
+        "-1"
+    ],
+    [
+        "Net income available to common shareholders",
+        "-85",
+        "4",
+        "25",
+        "34",
+        "20",
+        "-1"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "-0.31",
+        "0.02",
+        "0.09",
+        "0.11",
+        "0.06",
+        "-0.01"
+    ],
+    [
+        "Diluted",
+        "-0.31",
+        "0.02",
+        "0.09",
+        "0.11",
+        "0.06",
+        "-0.01"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "273",
+        "276",
+        "291",
+        "315",
+        "325",
+        "325"
+    ],
+    [
+        "Diluted",
+        "273",
+        "278",
+        "292",
+        "316",
+        "325",
+        "325"
+    ],
+    [
+        "EBITDA",
+        "77",
+        "119",
+        "154",
+        "137",
+        "106",
+        "91"
+    ]
+]

@@ -1,0 +1,12 @@
+document.location = hostPath+"/ajax/ReportProcess4CSV.html?" + params+"&denominatorView="+denominatorView+"&number="+number;
+
+t=
+region=
+culture=
+refresh=
+productCode=
+version=
+https://financials.morningstar.com/ajax/ReportProcess4CSV.html?&denominatorView=1&number=1
+
+
+https://financials.morningstar.com/ajax/ReportProcess4CSV.html?&t=0P000067YY&region=can&culture=en-US&ops=clear&cur=&reportType=is&period=12&dataType=A&order=asc&columnYear=5&curYearPart=1st5year&rounding=3&view=raw&r=801461&denominatorView=raw&number=3

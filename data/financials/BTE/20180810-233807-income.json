@@ -1,0 +1,196 @@
+[
+    [
+        "\ufeffBAYTEX ENERGY CORP  (BTE) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "1364",
+        "1957",
+        "1130",
+        "780",
+        "1092",
+        "1187"
+    ],
+    [
+        "Cost of revenue",
+        "252",
+        "439",
+        "241",
+        "178",
+        "242",
+        "267"
+    ],
+    [
+        "Gross profit",
+        "1112",
+        "1518",
+        "888",
+        "602",
+        "850",
+        "920"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "78",
+        "87",
+        "75",
+        "65",
+        "63",
+        "56"
+    ],
+    [
+        "Depreciation and amortization",
+        "329",
+        "537",
+        "662",
+        "508",
+        "482",
+        "449"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "",
+        "39",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Interest expense",
+        "41",
+        "83",
+        "103",
+        "104",
+        "100",
+        "99"
+    ],
+    [
+        "Other operating expenses",
+        "446",
+        "771",
+        "1526",
+        "683",
+        "274",
+        "538"
+    ],
+    [
+        "Total costs and expenses",
+        "894",
+        "1517",
+        "2366",
+        "1360",
+        "919",
+        "1142"
+    ],
+    [
+        "Income before income taxes",
+        "218",
+        "2",
+        "-1478",
+        "-758",
+        "-69",
+        "-221"
+    ],
+    [
+        "Provision for income taxes",
+        "53",
+        "134",
+        "-344",
+        "-273",
+        "-156",
+        "-167"
+    ],
+    [
+        "Net income from continuing operations",
+        "165",
+        "-133",
+        "-1134",
+        "-485",
+        "87",
+        "-55"
+    ],
+    [
+        "Net income",
+        "165",
+        "-133",
+        "-1134",
+        "-485",
+        "87",
+        "-55"
+    ],
+    [
+        "Net income available to common shareholders",
+        "165",
+        "-133",
+        "-1134",
+        "-485",
+        "87",
+        "-55"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "1.33",
+        "-0.89",
+        "-5.72",
+        "-2.29",
+        "0.37",
+        "-0.23"
+    ],
+    [
+        "Diluted",
+        "1.32",
+        "-0.89",
+        "-5.72",
+        "-2.29",
+        "0.37",
+        "-0.23"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "124",
+        "149",
+        "198",
+        "212",
+        "235",
+        "236"
+    ],
+    [
+        "Diluted",
+        "125",
+        "149",
+        "198",
+        "212",
+        "237",
+        "237"
+    ],
+    [
+        "EBITDA",
+        "588",
+        "621",
+        "-713",
+        "-146",
+        "513",
+        "327"
+    ]
+]

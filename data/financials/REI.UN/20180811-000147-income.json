@@ -1,0 +1,222 @@
+[
+    [
+        "\ufeffRIOCAN REAL ESTATE INVESTMENT TRUST  (REI.UN) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "1121",
+        "1204",
+        "1088",
+        "1133",
+        "1155",
+        "1148"
+    ],
+    [
+        "Expenses"
+    ],
+    [
+        "Operating expenses",
+        "392",
+        "425",
+        "424",
+        "434",
+        "418",
+        "415"
+    ],
+    [
+        "Depreciation and amortization",
+        "",
+        "",
+        "4",
+        "4",
+        "10",
+        "9"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "45",
+        "69",
+        "56",
+        "68",
+        "54",
+        "61"
+    ],
+    [
+        "Total expenses",
+        "437",
+        "494",
+        "484",
+        "506",
+        "481",
+        "486"
+    ],
+    [
+        "Operating income",
+        "684",
+        "710",
+        "603",
+        "627",
+        "674",
+        "662"
+    ],
+    [
+        "Interest income",
+        "14",
+        "7",
+        "5",
+        "",
+        "8",
+        "10"
+    ],
+    [
+        "Interest expenses",
+        "234",
+        "235",
+        "187",
+        "180",
+        "171",
+        "169"
+    ],
+    [
+        "Gain on sale of equity investment",
+        "221",
+        "147",
+        "-79",
+        "216",
+        "194",
+        "163"
+    ],
+    [
+        "Other income (expense)",
+        "28",
+        "35",
+        "76",
+        "16",
+        "4",
+        "-29"
+    ],
+    [
+        "Income before income taxes",
+        "713",
+        "664",
+        "419",
+        "679",
+        "708",
+        "636"
+    ],
+    [
+        "Provision for income taxes",
+        "",
+        "",
+        "1",
+        "-4",
+        "-0",
+        "-2"
+    ],
+    [
+        "Net income from continuing operations",
+        "713",
+        "664",
+        "418",
+        "683",
+        "708",
+        "639"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "",
+        "-275",
+        "148",
+        "7",
+        "4"
+    ],
+    [
+        "Other",
+        "-4",
+        "-1",
+        "-1",
+        "-0",
+        "",
+        ""
+    ],
+    [
+        "Net income",
+        "709",
+        "663",
+        "142",
+        "831",
+        "715",
+        "643"
+    ],
+    [
+        "Net income available to common shareholders",
+        "709",
+        "663",
+        "142",
+        "831",
+        "715",
+        "643"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "2.30",
+        "2.11",
+        "0.40",
+        "2.51",
+        "2.18",
+        "1.99"
+    ],
+    [
+        "Diluted",
+        "2.29",
+        "2.10",
+        "0.40",
+        "2.51",
+        "2.18",
+        "1.99"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "302",
+        "308",
+        "319",
+        "325",
+        "327",
+        "323"
+    ],
+    [
+        "Diluted",
+        "303",
+        "309",
+        "320",
+        "326",
+        "327",
+        "323"
+    ],
+    [
+        "EBITDA",
+        "949",
+        "904",
+        "610",
+        "863",
+        "889",
+        "815"
+    ]
+]

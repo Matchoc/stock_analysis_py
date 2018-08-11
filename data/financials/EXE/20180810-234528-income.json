@@ -1,0 +1,214 @@
+[
+    [
+        "\ufeffEXTENDICARE INC  (EXE) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "2024",
+        "816",
+        "980",
+        "1061",
+        "1097",
+        "1106"
+    ],
+    [
+        "Cost of revenue",
+        "1793",
+        "708",
+        "851",
+        "931",
+        "",
+        ""
+    ],
+    [
+        "Gross profit",
+        "231",
+        "108",
+        "128",
+        "130",
+        "1097",
+        "1106"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "75",
+        "33",
+        "42",
+        "37",
+        "944",
+        "950"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "",
+        "",
+        "",
+        "0",
+        "",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "78",
+        "24",
+        "27",
+        "31",
+        "90",
+        "92"
+    ],
+    [
+        "Total operating expenses",
+        "153",
+        "57",
+        "69",
+        "68",
+        "1034",
+        "1042"
+    ],
+    [
+        "Operating income",
+        "78",
+        "51",
+        "59",
+        "62",
+        "63",
+        "64"
+    ],
+    [
+        "Interest Expense",
+        "63",
+        "33",
+        "31",
+        "27",
+        "28",
+        "28"
+    ],
+    [
+        "Other income (expense)",
+        "-6",
+        "-9",
+        "9",
+        "4",
+        "7",
+        "2"
+    ],
+    [
+        "Income before taxes",
+        "9",
+        "9",
+        "37",
+        "39",
+        "43",
+        "38"
+    ],
+    [
+        "Provision for income taxes",
+        "3",
+        "5",
+        "14",
+        "7",
+        "11",
+        "11"
+    ],
+    [
+        "Net income from continuing operations",
+        "5",
+        "4",
+        "23",
+        "31",
+        "32",
+        "26"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "-23",
+        "209",
+        "4",
+        "-30",
+        "10"
+    ],
+    [
+        "Net income",
+        "5",
+        "-19",
+        "232",
+        "35",
+        "2",
+        "37"
+    ],
+    [
+        "Net income available to common shareholders",
+        "5",
+        "-19",
+        "232",
+        "35",
+        "2",
+        "37"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.06",
+        "-0.21",
+        "2.64",
+        "0.40",
+        "0.02",
+        "0.41"
+    ],
+    [
+        "Diluted",
+        "0.06",
+        "-0.21",
+        "2.41",
+        "0.40",
+        "0.02",
+        "0.41"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "87",
+        "88",
+        "88",
+        "88",
+        "89",
+        "89"
+    ],
+    [
+        "Diluted",
+        "104",
+        "99",
+        "99",
+        "100",
+        "100",
+        "99"
+    ],
+    [
+        "EBITDA",
+        "150",
+        "110",
+        "95",
+        "98",
+        "102",
+        "98"
+    ]
+]

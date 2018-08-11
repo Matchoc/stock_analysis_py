@@ -1,0 +1,214 @@
+[
+    [
+        "\ufeffMETHANEX CORP  (MX) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "3024",
+        "3223",
+        "2226",
+        "1998",
+        "3061",
+        "3493"
+    ],
+    [
+        "Cost of revenue",
+        "1930",
+        "2134",
+        "1646",
+        "1492",
+        "2012",
+        ""
+    ],
+    [
+        "Gross profit",
+        "1094",
+        "1089",
+        "579",
+        "506",
+        "1049",
+        "3493"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "274",
+        "124",
+        "114",
+        "205",
+        "244",
+        ""
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "",
+        "",
+        "-65",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "297",
+        "310",
+        "358",
+        "306",
+        "329",
+        "888"
+    ],
+    [
+        "Total operating expenses",
+        "571",
+        "434",
+        "406",
+        "510",
+        "572",
+        "888"
+    ],
+    [
+        "Operating income",
+        "523",
+        "655",
+        "173",
+        "-4",
+        "476",
+        "2605"
+    ],
+    [
+        "Interest Expense",
+        "56",
+        "37",
+        "70",
+        "90",
+        "95",
+        "96"
+    ],
+    [
+        "Other income (expense)",
+        "-23",
+        "44",
+        "110",
+        "57",
+        "89",
+        "-1926"
+    ],
+    [
+        "Income before taxes",
+        "443",
+        "662",
+        "213",
+        "-38",
+        "471",
+        "583"
+    ],
+    [
+        "Provision for income taxes",
+        "66",
+        "155",
+        "11",
+        "-9",
+        "96",
+        "127"
+    ],
+    [
+        "Net income from continuing operations",
+        "377",
+        "506",
+        "202",
+        "-28",
+        "375",
+        "456"
+    ],
+    [
+        "Other",
+        "-48",
+        "-52",
+        "-2",
+        "16",
+        "-59",
+        "-76"
+    ],
+    [
+        "Net income",
+        "329",
+        "455",
+        "201",
+        "-13",
+        "316",
+        "380"
+    ],
+    [
+        "Net income available to common shareholders",
+        "329",
+        "455",
+        "201",
+        "-13",
+        "316",
+        "380"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "3.46",
+        "4.79",
+        "2.21",
+        "-0.14",
+        "3.64",
+        "4.60"
+    ],
+    [
+        "Diluted",
+        "3.41",
+        "4.55",
+        "2.01",
+        "-0.14",
+        "3.64",
+        "4.60"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "95",
+        "95",
+        "91",
+        "90",
+        "87",
+        "84"
+    ],
+    [
+        "Diluted",
+        "96",
+        "96",
+        "91",
+        "90",
+        "87",
+        "84"
+    ],
+    [
+        "EBITDA",
+        "622",
+        "841",
+        "478",
+        "281",
+        "798",
+        "916"
+    ]
+]

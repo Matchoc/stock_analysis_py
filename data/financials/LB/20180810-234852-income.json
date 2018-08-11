@@ -1,0 +1,325 @@
+[
+    [
+        "\ufeffLAURENTIAN BANK OF CANADA  (LB) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in October. CAD in millions except per share data.",
+        "2013-10",
+        "2014-10",
+        "2015-10",
+        "2016-10",
+        "2017-10",
+        "TTM"
+    ],
+    [
+        "Revenue"
+    ],
+    [
+        "Interest income"
+    ],
+    [
+        "Loans and Leases",
+        "1086",
+        "1062",
+        "1034",
+        "1066",
+        "1170",
+        "1301"
+    ],
+    [
+        "Deposits with banks",
+        "2",
+        "1",
+        "1",
+        "2",
+        "1",
+        "2"
+    ],
+    [
+        "Other assets",
+        "102",
+        "82",
+        "106",
+        "99",
+        "85",
+        "82"
+    ],
+    [
+        "Total interest income",
+        "1190",
+        "1145",
+        "1141",
+        "1167",
+        "1256",
+        "1384"
+    ],
+    [
+        "Interest expense"
+    ],
+    [
+        "Deposits",
+        "464",
+        "449",
+        "436",
+        "455",
+        "465",
+        "514"
+    ],
+    [
+        "Other expense",
+        "158",
+        "135",
+        "131",
+        "122",
+        "152",
+        "180"
+    ],
+    [
+        "Total interest expense",
+        "621",
+        "584",
+        "566",
+        "577",
+        "617",
+        "694"
+    ],
+    [
+        "Net interest income",
+        "569",
+        "561",
+        "575",
+        "590",
+        "638",
+        "690"
+    ],
+    [
+        "Noninterest revenue"
+    ],
+    [
+        "Commissions and fees",
+        "194",
+        "205",
+        "205",
+        "217",
+        "230",
+        "224"
+    ],
+    [
+        "Lending and deposit-related fees",
+        "134",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Securities gains (losses)",
+        "40",
+        "77",
+        "92",
+        "83",
+        "87",
+        "84"
+    ],
+    [
+        "Insurance premium",
+        "17",
+        "19",
+        "17",
+        "18",
+        "18",
+        "17"
+    ],
+    [
+        "Other income",
+        "-89",
+        "2",
+        "2",
+        "3",
+        "20",
+        "25"
+    ],
+    [
+        "Total noninterest revenue",
+        "297",
+        "303",
+        "316",
+        "321",
+        "355",
+        "350"
+    ],
+    [
+        "Total net revenue",
+        "865",
+        "864",
+        "891",
+        "910",
+        "993",
+        "1039"
+    ],
+    [
+        "Provisions for credit losses",
+        "36",
+        "42",
+        "35",
+        "33",
+        "37",
+        "39"
+    ],
+    [
+        "Noninterest expenses"
+    ],
+    [
+        "Compensation and benefits",
+        "351",
+        "340",
+        "346",
+        "335",
+        "361",
+        "369"
+    ],
+    [
+        "\"Tech",
+        " communication and equipment\"",
+        "171",
+        "187",
+        "200",
+        "188",
+        "182",
+        ""
+    ],
+    [
+        "\"Merger",
+        " acquisition and restructuring\"",
+        "38",
+        "",
+        "",
+        "4",
+        "16",
+        "8"
+    ],
+    [
+        "Other special charges",
+        "",
+        "114",
+        "75",
+        "153",
+        "130",
+        "130"
+    ],
+    [
+        "Other expenses",
+        "106",
+        "-114",
+        "26",
+        "-157",
+        "-146",
+        "53"
+    ],
+    [
+        "Total noninterest expenses",
+        "667",
+        "527",
+        "648",
+        "523",
+        "543",
+        "560"
+    ],
+    [
+        "Income (loss) from cont ops before taxes",
+        "162",
+        "295",
+        "209",
+        "354",
+        "413",
+        "440"
+    ],
+    [
+        "Provision (benefit) for taxes",
+        "33",
+        "41",
+        "31",
+        "45",
+        "60",
+        "63"
+    ],
+    [
+        "Other income (expense)",
+        "-4",
+        "-114",
+        "-75",
+        "-157",
+        "-146",
+        "-145"
+    ],
+    [
+        "Net income",
+        "125",
+        "140",
+        "102",
+        "152",
+        "206",
+        "232"
+    ],
+    [
+        "Preferred dividend",
+        "12",
+        "11",
+        "10",
+        "13",
+        "17",
+        "16"
+    ],
+    [
+        "Net income available to common shareholders",
+        "113",
+        "129",
+        "93",
+        "139",
+        "189",
+        "216"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "3.99",
+        "4.50",
+        "3.21",
+        "4.55",
+        "5.40",
+        "5.65"
+    ],
+    [
+        "Diluted",
+        "3.99",
+        "4.50",
+        "3.21",
+        "4.55",
+        "5.40",
+        "5.65"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "28",
+        "29",
+        "29",
+        "30",
+        "35",
+        "38"
+    ],
+    [
+        "Diluted",
+        "28",
+        "29",
+        "29",
+        "30",
+        "35",
+        "38"
+    ]
+]

@@ -1,0 +1,33 @@
+5N Plus Inc.	VNP
+*Algonquin Power & Utilities Corp.	AQN x
+Atlantic Power Corporation	ATP
++Ballard Power Systems Inc.	BLDP
+*Boralex Inc. Class A Shares	BLX
+*-Brookfield Renewable Partners L.P.	BEP.UN x
+Cascades Inc.	CAS
+Clearwater Seafoods Incorporated	CLR
+DIRTT Environmental Solutions Ltd.	DRT x
+EcoSynthetix Inc.	ECO
+Hydrogenics Corporation	HYG
+-Innergex Renewable Energy Inc.	INE x
+KP Tissue Inc.	KPT
+NFI Group Inc.	NFI x
+*Northland Power Inc.	NPI x
+Polaris Infrastructure Inc.	PIF
+SunOpta Inc.	SOY
+*-TransAlta Renewables Inc.	RNW x
+Westport Fuel Systems Inc.	WPRT
+
++EnerDynamic Hybrid Technologies Inc. TSX-V:EHT (wind, solar)
+Finavera Renewables FVR (renewables)
+Run of River Power Inc. ROR (hydro)
+Shear Wind Inc. SWX (wind)
+UGE International, LTD UGE (photovoltaics, solar)
+Ram Power Corp. RPG (geothermal)
+Synex International SXI (hydro)
+WaterFurnace Renewable Energy Inc. WFI (geothermal)
+
++Carmanah Technologies Corps. CMH (renewable energy equipment & services)
++Solar Alliance Energy Inc SAN
+
+

@@ -1,0 +1,186 @@
+[
+    [
+        "\ufeffCES ENERGY SOLUTIONS CORP  (CEU) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "663",
+        "973",
+        "750",
+        "568",
+        "1030",
+        "1078"
+    ],
+    [
+        "Cost of revenue",
+        "488",
+        "707",
+        "590",
+        "456",
+        "780",
+        "817"
+    ],
+    [
+        "Gross profit",
+        "175",
+        "265",
+        "160",
+        "112",
+        "250",
+        "261"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "104",
+        "149",
+        "152",
+        "144",
+        "184",
+        "188"
+    ],
+    [
+        "Interest expense",
+        "18",
+        "22",
+        "23",
+        "23",
+        "26",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "1",
+        "2",
+        "137",
+        "4",
+        "14",
+        "39"
+    ],
+    [
+        "Total costs and expenses",
+        "123",
+        "173",
+        "312",
+        "171",
+        "224",
+        "226"
+    ],
+    [
+        "Income before income taxes",
+        "52",
+        "93",
+        "-152",
+        "-59",
+        "26",
+        "35"
+    ],
+    [
+        "Provision for income taxes",
+        "15",
+        "25",
+        "-60",
+        "5",
+        "-10",
+        "-7"
+    ],
+    [
+        "Net income from continuing operations",
+        "37",
+        "68",
+        "-92",
+        "-65",
+        "36",
+        "42"
+    ],
+    [
+        "Other",
+        "",
+        "-0",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Net income",
+        "37",
+        "68",
+        "-92",
+        "-65",
+        "36",
+        "42"
+    ],
+    [
+        "Net income available to common shareholders",
+        "37",
+        "68",
+        "-92",
+        "-65",
+        "36",
+        "42"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.20",
+        "0.33",
+        "-0.42",
+        "-0.27",
+        "0.14",
+        "0.16"
+    ],
+    [
+        "Diluted",
+        "0.19",
+        "0.31",
+        "-0.42",
+        "-0.27",
+        "0.13",
+        "0.15"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "190",
+        "208",
+        "218",
+        "243",
+        "266",
+        "267"
+    ],
+    [
+        "Diluted",
+        "198",
+        "216",
+        "218",
+        "243",
+        "273",
+        "273"
+    ],
+    [
+        "EBITDA",
+        "96",
+        "155",
+        "-74",
+        "25",
+        "117",
+        "123"
+    ]
+]

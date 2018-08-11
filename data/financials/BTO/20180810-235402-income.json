@@ -1,0 +1,196 @@
+[
+    [
+        "\ufeffB2GOLD CORP  (BTO) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "544",
+        "487",
+        "554",
+        "683",
+        "639",
+        "957"
+    ],
+    [
+        "Cost of revenue",
+        "397",
+        "393",
+        "467",
+        "473",
+        "488",
+        "667"
+    ],
+    [
+        "Gross profit",
+        "147",
+        "94",
+        "87",
+        "210",
+        "150",
+        "290"
+    ],
+    [
+        "Costs and expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "50",
+        "54",
+        "52",
+        "55",
+        "62",
+        "65"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "6",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Interest expense",
+        "3",
+        "6",
+        "16",
+        "10",
+        "13",
+        "24"
+    ],
+    [
+        "Other operating expenses",
+        "1",
+        "786",
+        "163",
+        "77",
+        "7",
+        "-9"
+    ],
+    [
+        "Total costs and expenses",
+        "60",
+        "845",
+        "230",
+        "142",
+        "81",
+        "81"
+    ],
+    [
+        "Income before income taxes",
+        "87",
+        "-751",
+        "-143",
+        "69",
+        "69",
+        "209"
+    ],
+    [
+        "Provision for income taxes",
+        "20",
+        "-85",
+        "2",
+        "30",
+        "7",
+        "83"
+    ],
+    [
+        "Net income from continuing operations",
+        "67",
+        "-666",
+        "-145",
+        "39",
+        "62",
+        "126"
+    ],
+    [
+        "Other",
+        "",
+        "1",
+        "-5",
+        "1",
+        "-5",
+        "-7"
+    ],
+    [
+        "Net income",
+        "67",
+        "-665",
+        "-150",
+        "39",
+        "57",
+        "119"
+    ],
+    [
+        "Net income available to common shareholders",
+        "67",
+        "-665",
+        "-150",
+        "39",
+        "57",
+        "119"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.11",
+        "-0.90",
+        "-0.16",
+        "0.04",
+        "0.06",
+        "0.12"
+    ],
+    [
+        "Diluted",
+        "0.07",
+        "-0.90",
+        "-0.16",
+        "0.04",
+        "0.06",
+        "0.10"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "636",
+        "741",
+        "922",
+        "942",
+        "976",
+        "981"
+    ],
+    [
+        "Diluted",
+        "664",
+        "741",
+        "922",
+        "955",
+        "991",
+        "1027"
+    ],
+    [
+        "EBITDA",
+        "176",
+        "-633",
+        "17",
+        "251",
+        "82",
+        "233"
+    ]
+]

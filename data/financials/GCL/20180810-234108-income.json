@@ -1,0 +1,195 @@
+[
+    [
+        "\ufeffCOLABOR GROUP INC  (GCL) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "1439",
+        "1432",
+        "1506",
+        "1399",
+        "1319",
+        "1267"
+    ],
+    [
+        "Cost of revenue",
+        "1273",
+        "1402",
+        "1480",
+        "1369",
+        "1295",
+        "1246"
+    ],
+    [
+        "Gross profit",
+        "167",
+        "30",
+        "26",
+        "30",
+        "25",
+        "21"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "99",
+        "8",
+        "4",
+        "5",
+        "8",
+        ""
+    ],
+    [
+        "Other operating expenses",
+        "65",
+        "19",
+        "15",
+        "12",
+        "11",
+        "15"
+    ],
+    [
+        "Total operating expenses",
+        "164",
+        "27",
+        "20",
+        "17",
+        "20",
+        "15"
+    ],
+    [
+        "Operating income",
+        "3",
+        "3",
+        "7",
+        "13",
+        "5",
+        "6"
+    ],
+    [
+        "Interest Expense",
+        "12",
+        "13",
+        "12",
+        "11",
+        "7",
+        "7"
+    ],
+    [
+        "Other income (expense)",
+        "",
+        "-56",
+        "-36",
+        "-1",
+        "-17",
+        "-23"
+    ],
+    [
+        "Income before income taxes",
+        "-9",
+        "-66",
+        "-42",
+        "2",
+        "-19",
+        "-24"
+    ],
+    [
+        "Provision for income taxes",
+        "-3",
+        "2",
+        "-8",
+        "1",
+        "-1",
+        "-2"
+    ],
+    [
+        "Net income from continuing operations",
+        "-7",
+        "-67",
+        "-34",
+        "0",
+        "-19",
+        "-22"
+    ],
+    [
+        "Net income",
+        "-7",
+        "-67",
+        "-34",
+        "0",
+        "-19",
+        "-22"
+    ],
+    [
+        "Net income available to common shareholders",
+        "-7",
+        "-67",
+        "-34",
+        "0",
+        "-19",
+        "-22"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "-0.26",
+        "-2.48",
+        "-1.23",
+        "0.01",
+        "-0.18",
+        "-0.22"
+    ],
+    [
+        "Diluted",
+        "-0.26",
+        "-2.48",
+        "-1.23",
+        "0.01",
+        "-0.18",
+        "-0.22"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "26",
+        "27",
+        "27",
+        "44",
+        "102",
+        "102"
+    ],
+    [
+        "Diluted",
+        "26",
+        "27",
+        "27",
+        "44",
+        "102",
+        "102"
+    ],
+    [
+        "EBITDA",
+        "22",
+        "-33",
+        "-14",
+        "24",
+        "-1",
+        "-5"
+    ]
+]

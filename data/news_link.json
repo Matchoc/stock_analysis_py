@@ -1119,6 +1119,94 @@
         "exchange":"to",
         "category":"unknown"
     },
+	"VNP": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"ATP": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"BLDP": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"BLX": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"CAS": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"CLR": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"ECO": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"HYG": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"KPT": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"PIF": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"SOY": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"WPRT": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"EHT": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"FVR": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"ROR": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"SWX": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"UGE": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"RPG": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"SXI": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"WFI": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"CMH": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"SAN": {
+        "exchange":"to",
+        "category":"unknown"
+	},
 	"GSPTSE": {
 		"exchange":"to",
 		"category":"unknown"

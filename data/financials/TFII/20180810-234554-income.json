@@ -1,0 +1,203 @@
+[
+    [
+        "\ufeffTFI INTERNATIONAL INC  (TFII) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "3110",
+        "3715",
+        "4030",
+        "4025",
+        "4741",
+        "4787"
+    ],
+    [
+        "Cost of revenue",
+        "2584",
+        "3077",
+        "3364",
+        "3351",
+        "3961",
+        "3944"
+    ],
+    [
+        "Gross profit",
+        "525",
+        "637",
+        "665",
+        "675",
+        "780",
+        "844"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "Depreciation and amortization",
+        "136",
+        "153",
+        "176",
+        "193",
+        "414",
+        "260"
+    ],
+    [
+        "Other operating expenses",
+        "196",
+        "231",
+        "240",
+        "244",
+        "269",
+        "271"
+    ],
+    [
+        "Total operating expenses",
+        "332",
+        "384",
+        "416",
+        "437",
+        "682",
+        "531"
+    ],
+    [
+        "Operating income",
+        "193",
+        "254",
+        "249",
+        "238",
+        "98",
+        "312"
+    ],
+    [
+        "Interest Expense",
+        "42",
+        "45",
+        "60",
+        "41",
+        "65",
+        "64"
+    ],
+    [
+        "Other income (expense)",
+        "-79",
+        "-27",
+        "12",
+        "7",
+        "85",
+        "86"
+    ],
+    [
+        "Income before income taxes",
+        "72",
+        "182",
+        "201",
+        "203",
+        "117",
+        "334"
+    ],
+    [
+        "Provision for income taxes",
+        "10",
+        "54",
+        "55",
+        "46",
+        "-41",
+        "-13"
+    ],
+    [
+        "Net income from continuing ops",
+        "62",
+        "128",
+        "146",
+        "157",
+        "158",
+        "348"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "",
+        "18",
+        "483",
+        "",
+        ""
+    ],
+    [
+        "Net income",
+        "62",
+        "128",
+        "163",
+        "640",
+        "158",
+        "348"
+    ],
+    [
+        "Net income available to common shareholders",
+        "62",
+        "128",
+        "163",
+        "640",
+        "158",
+        "348"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.67",
+        "1.29",
+        "1.63",
+        "6.83",
+        "1.75",
+        "3.87"
+    ],
+    [
+        "Diluted",
+        "0.66",
+        "1.26",
+        "1.60",
+        "6.70",
+        "1.70",
+        "3.79"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "93",
+        "99",
+        "100",
+        "94",
+        "90",
+        "89"
+    ],
+    [
+        "Diluted",
+        "94",
+        "101",
+        "102",
+        "96",
+        "93",
+        "93"
+    ],
+    [
+        "EBITDA",
+        "250",
+        "380",
+        "437",
+        "438",
+        "596",
+        "658"
+    ]
+]

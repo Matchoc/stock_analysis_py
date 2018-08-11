@@ -1,0 +1,232 @@
+[
+    [
+        "\ufeffCOTT CORP  (BCB) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. USD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "2094",
+        "2103",
+        "2944",
+        "3236",
+        "2270",
+        "2317"
+    ],
+    [
+        "Cost of revenue",
+        "1842",
+        "1826",
+        "2048",
+        "2162",
+        "1142",
+        "1170"
+    ],
+    [
+        "Gross profit",
+        "252",
+        "276",
+        "896",
+        "1074",
+        "1128",
+        "1147"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "160",
+        "255",
+        "769",
+        "958",
+        "1043",
+        "1064"
+    ],
+    [
+        "\"Restructuring",
+        " merger and acquisition\"",
+        "2",
+        "2",
+        "21",
+        "28",
+        "26",
+        "21"
+    ],
+    [
+        "Other operating expenses",
+        "-2",
+        "-2",
+        "-21",
+        "-28",
+        "-26",
+        "-21"
+    ],
+    [
+        "Total operating expenses",
+        "160",
+        "255",
+        "769",
+        "958",
+        "1043",
+        "1064"
+    ],
+    [
+        "Operating income",
+        "92",
+        "22",
+        "127",
+        "116",
+        "85",
+        "83"
+    ],
+    [
+        "Interest Expense",
+        "52",
+        "40",
+        "111",
+        "124",
+        "86",
+        "86"
+    ],
+    [
+        "Other income (expense)",
+        "-16",
+        "-27",
+        "-18",
+        "-38",
+        "-33",
+        "4"
+    ],
+    [
+        "Income before taxes",
+        "24",
+        "-45",
+        "-2",
+        "-46",
+        "-34",
+        "1"
+    ],
+    [
+        "Provision for income taxes",
+        "2",
+        "-61",
+        "-23",
+        "26",
+        "-30",
+        "-27"
+    ],
+    [
+        "Net income from continuing operations",
+        "22",
+        "16",
+        "21",
+        "-72",
+        "-4",
+        "28"
+    ],
+    [
+        "Net income from discontinuing ops",
+        "",
+        "",
+        "",
+        "",
+        "11",
+        "409"
+    ],
+    [
+        "Other",
+        "-5",
+        "-6",
+        "-6",
+        "-6",
+        "-8",
+        "-5"
+    ],
+    [
+        "Net income",
+        "17",
+        "11",
+        "14",
+        "-78",
+        "-1",
+        "432"
+    ],
+    [
+        "Preferred dividend",
+        "",
+        "1",
+        "6",
+        "",
+        "",
+        ""
+    ],
+    [
+        "Net income available to common shareholders",
+        "17",
+        "10",
+        "9",
+        "-78",
+        "-1",
+        "432"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.18",
+        "0.11",
+        "-0.03",
+        "-0.61",
+        "-0.01",
+        "3.09"
+    ],
+    [
+        "Diluted",
+        "0.18",
+        "0.10",
+        "-0.03",
+        "-0.61",
+        "-0.01",
+        "3.05"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "95",
+        "94",
+        "103",
+        "128",
+        "139",
+        "140"
+    ],
+    [
+        "Diluted",
+        "96",
+        "96",
+        "103",
+        "128",
+        "139",
+        "141"
+    ],
+    [
+        "EBITDA",
+        "177",
+        "105",
+        "333",
+        "317",
+        "240",
+        "279"
+    ]
+]

@@ -1,0 +1,204 @@
+[
+    [
+        "\ufeffSECURE ENERGY SERVICES INC  (SES) CashFlowFlag INCOME STATEMENT"
+    ],
+    [
+        "Fiscal year ends in December. CAD in millions except per share data.",
+        "2013-12",
+        "2014-12",
+        "2015-12",
+        "2016-12",
+        "2017-12",
+        "TTM"
+    ],
+    [
+        "Revenue",
+        "1493",
+        "2272",
+        "1346",
+        "1410",
+        "2328",
+        "2719"
+    ],
+    [
+        "Cost of revenue",
+        "1361",
+        "2076",
+        "1164",
+        "1267",
+        "2104",
+        "2472"
+    ],
+    [
+        "Gross profit",
+        "132",
+        "195",
+        "182",
+        "143",
+        "224",
+        "247"
+    ],
+    [
+        "Operating expenses"
+    ],
+    [
+        "Research and development",
+        "9",
+        "15",
+        "12",
+        "5",
+        "7",
+        "5"
+    ],
+    [
+        "\"Sales",
+        " General and administrative\"",
+        "60",
+        "85",
+        "83",
+        "70",
+        "83",
+        "91"
+    ],
+    [
+        "Other operating expenses",
+        "",
+        "",
+        "126",
+        "113",
+        "119",
+        "121"
+    ],
+    [
+        "Total operating expenses",
+        "70",
+        "100",
+        "221",
+        "188",
+        "209",
+        "217"
+    ],
+    [
+        "Operating income",
+        "62",
+        "95",
+        "-39",
+        "-45",
+        "15",
+        "29"
+    ],
+    [
+        "Interest Expense",
+        "7",
+        "10",
+        "12",
+        "12",
+        "12",
+        "14"
+    ],
+    [
+        "Other income (expense)",
+        "1",
+        "-33",
+        "-133",
+        "",
+        "-31",
+        "-31"
+    ],
+    [
+        "Income before taxes",
+        "55",
+        "51",
+        "-184",
+        "-57",
+        "-28",
+        "-16"
+    ],
+    [
+        "Provision for income taxes",
+        "16",
+        "21",
+        "-24",
+        "-8",
+        "6",
+        "9"
+    ],
+    [
+        "Net income from continuing operations",
+        "39",
+        "31",
+        "-160",
+        "-49",
+        "-34",
+        "-25"
+    ],
+    [
+        "Net income",
+        "39",
+        "31",
+        "-160",
+        "-49",
+        "-34",
+        "-25"
+    ],
+    [
+        "Net income available to common shareholders",
+        "39",
+        "31",
+        "-160",
+        "-49",
+        "-34",
+        "-25"
+    ],
+    [
+        "Earnings per share"
+    ],
+    [
+        "Basic",
+        "0.36",
+        "0.26",
+        "-1.20",
+        "-0.32",
+        "-0.21",
+        "-0.21"
+    ],
+    [
+        "Diluted",
+        "0.35",
+        "0.25",
+        "-1.20",
+        "-0.32",
+        "-0.21",
+        "-0.21"
+    ],
+    [
+        "Weighted average shares outstanding"
+    ],
+    [
+        "Basic",
+        "108",
+        "119",
+        "133",
+        "155",
+        "163",
+        "164"
+    ],
+    [
+        "Diluted",
+        "111",
+        "122",
+        "133",
+        "155",
+        "163",
+        "164"
+    ],
+    [
+        "EBITDA",
+        "130",
+        "162",
+        "-46",
+        "68",
+        "103",
+        "120"
+    ]
+]
