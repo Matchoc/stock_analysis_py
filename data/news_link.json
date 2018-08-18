@@ -1168,7 +1168,7 @@
         "category":"unknown"
 	},
 	"EHT": {
-        "exchange":"to",
+        "exchange":"v",
         "category":"unknown"
 	},
 	"FVR": {
@@ -1184,7 +1184,7 @@
         "category":"unknown"
 	},
 	"UGE": {
-        "exchange":"to",
+        "exchange":"v",
         "category":"unknown"
 	},
 	"RPG": {
@@ -1204,6 +1204,10 @@
         "category":"unknown"
 	},
 	"SAN": {
+        "exchange":"to",
+        "category":"unknown"
+	},
+	"DIR-UN": {
         "exchange":"to",
         "category":"unknown"
 	},

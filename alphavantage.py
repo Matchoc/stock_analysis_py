@@ -158,6 +158,22 @@ def plot_line_do(slope, origin, type='r-'):
 # STOCK MARKET
 ###############################################################################
 	
+def del_old_prices():
+	priceglob = os.path.join(DATA_FOLDER, "prices", "**", "*.json")
+	pricefiles = glob.glob(priceglob)
+	
+	total = str(len(pricefiles))
+	count = 0
+	for file in pricefiles:
+		count += 1
+		myprint("(" + str(count) + "/" + total + ") processing file " + file, 3)
+		localglob = glob.glob(os.path.join(os.path.dirname(file), "*.json"))
+		localglob = sorted(localglob)
+		myprint("list of files found : " + str(localglob))
+		myprint("comparing " + file + " to " + localglob[-1])
+		if file != localglob[-1]:
+			os.remove(file)
+	
 def dl_time_series_daily_adjusted(symbol, compact):
 	if compact:
 		outputsize = "compact"
@@ -199,11 +215,11 @@ def dl_full_time_series_daily_adjusted():
 		ret = dl_time_series_daily_adjusted(symbol + "." + symbols[symbol]["exchange"], False)
 		if ret == 1:
 			myprint("Download Failed. Too many requests. Wainting 10 seconds.", 5)
-			sleep(10.0) # api call frenquency exceeded
+			sleep(20.0) # api call frenquency exceeded
 			ret = dl_time_series_daily_adjusted(symbol + "." + symbols[symbol]["exchange"], False)
 		elif ret == 2:
 			myprint("Download Failed. Symbol not found or URL malformed.", 5)
-		sleep(3.0)
+		sleep(5.0)
 		
 def tech_linear_regression(symbol, period):
 	data, pricefile = get_latest_json(symbol)
@@ -381,6 +397,8 @@ def do_actions(actions, params):
 		plot_points(params)
 	if "plot_line" in actions or "plot_points" in actions:
 		plt.show()
+	if "del_old_prices" in actions:
+		del_old_prices()
 		
 		
 if __name__ == '__main__':
@@ -391,12 +409,13 @@ if __name__ == '__main__':
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
 		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
 		#"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
-		"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
-		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
+		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
+		#"del_old_prices", # Cleanup any but the last price
+		"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
-		"single_symbol" : "BNS.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		"single_symbol" : "UGE.v", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		#"single_symbol" : "TV.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		"tech_period" : 100, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting

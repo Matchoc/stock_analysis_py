@@ -84,3 +84,62 @@ EMP-A.to : Emprie Company Limited
 	- vente au dÈtail de produits alimentaires et les activitÈs immobiliËres connexes, par líentremise de notre filiale entiËrement dÈtenue, Sobeys Inc., et une participation de 41,5 % comptabilisÈe selon la mÈthode de la mise en Èquivalence dans le FPI Crombie.
 	- around 20 - 30$
 	- 
+	
+	
+	
+NPI.to : Northland Power Inc.
+	- Renewable (wind, solar, biomass, hydro) power producing energy company
+	- 22.49$ (2018-08-15)
+	- CEO : Mike Crawley (Canadian businessman and political activist. (possibly elected ?)) (Took over John Brace when he retired after 30 years)
+	- Morten Melin Executive Vice President, Construction. Changes job often, limited education in engineering.
+	- Michael Shadbolt Vice President and General Counsel. Seems to know his stuff. Been there long time.
+	
+	
+	
+RNW.to : TransAlta Renewable Inc.
+	- 11.98 (up to 15$ a year ago) (2018-08-15)
+	- 7.69% dividend. 
+	- stock breaking it's 200 day moving average.
+	- small debt/equity ratio. positive return on equity
+	- A bit big market cap for the size ?
+	- National Bank Financial has a ÅgSector PerformÅh rating and a $12.50 price target on the stock.
+	- develops, owns, and operates renewable power generation facilities. The company's portfolio consists of wind, hydro, and gas facilities. It owns and operates 18 wind facilities, 13 hydroelectric facilities, 7 natural gas generation facilities, and 1 natural gas pipeline comprising an ownership interest of 2316 megawatts of net generating capacity located in the provinces of British Columbia, Alberta, Ontario, Quebec, New Brunswick, the State of Wyoming, and the State of Western Australia.
+	- (since 2018 ? previously Dawn Farrell ?) President John Kousinioris (working for trans since 2015 ?) (represented many cie in merger transaction ?)
+	- Senior VP Aron Willis
+	- it prepares to convert some of its coal-fired fleet to burn natural gas, he noted. (not so green ?)
+	- 
+	
+	
+BLDP.to : Ballard Power Systems Inc
+	- Developper and manufacturer of proton exchange membrane fuel cell
+	- split company in 2 in 2008 to separate fuel cell for automotive from other fuel cell
+	- No dividend
+	- R&D 23.4 CAD MIL
+	- Negative return on equity
+	- 4.13$ (2018-08-15)
+	- low debt equity (0.05)
+	
+	
+ECO.to : EcoSynthetix Inc.
+	- Biochemicals, various eco replacement for current stuff (eco glue, eco print, eco plastic, etc.)
+	- 1.84$
+	- 16.36M R&D
+
+EHT.v : Enerdynamic Hybrid Technologies Corp
+	- Solar solutions (house+battery+solar, portable solar station, solar car port, etc.)
+	- 0.04$ (going down)
+	
+BLX.to : Boralex
+	- power producer whose core business is dedicated to the development, building and operation of renewable energy power facilities (wind, hydroelectric, solar and thermal)
+	- Quebecois
+	- 19.06$
+	- 4.39m R&D
+	- 4.33 debt/equity
+	- 0.61$ (3.2%)
+	- interestingly low share (79mil) but average market cap
+	- Canada, france, USA
+	- parc communautaire eolien en 2015
+	- Patrick Lemaire PDG (2006) (ceo of the year by les affaires in 2017 ?)
+	- Hugues Girardin VP developpement (27 ans ?!)
+	- bemol : Boralex debt is increasing quite a bit faster than it's equity which is worrysome (but could be ok long-term)
+	- Volume moyen : 255 300
