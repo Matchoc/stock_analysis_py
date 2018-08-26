@@ -1,0 +1,81 @@
+solar energy
+
+Materials
+	- Common battery technologies used in today's home PV systems include, the valve regulated lead-acid battery– a modified version of the conventional lead–acid battery, nickel–cadmium and lithium-ion batteries.
+	- Other rechargeable batteries used for distributed PV systems include, sodium–sulfur and vanadium redox batteries, two prominent types of a molten salt and a flow battery, respectively
+	- Cadmium (Cd) a toxic heavy metal 
+		- as semiconductor in CdTe solar cells
+		- as buffer layer for CIGS cells (CdS)
+	- crystalline silicon modules. Lead in solder material for copper strings of cells
+	- Cadmium telluride converted 22.1% of sunlight (experimental)
+	- Copper Indium Gallium Selenide (thin-film PV)
+	- Polysilicon use exceeds all other polysilicon use
+	
+Grid Integration :
+	- CSP might store excess heat in high-temperature molten salts
+		- Solar Two power station store 1.44 TJ in 68m3 tanks for 39h of power at 99% efficiency
+	- Solar irradiance is important (africa, australia, mexico, argentina, middle east, india)
+	
+Costs :
+	- PV (25~40 years)
+	- Frame
+	- Wiring
+	- Inverters
+	- Labour
+	- Land
+	- Maintenance (9% of cost, 17% for CSP)
+	- Solar Insolation (?)
+	- LCOE (Leverized cost of electricity)
+		- 1 watt peak solar PV generates 1 to 2 kWh per year
+	- These cost levels are driving three emerging trends: vertical integration of the supply chain, origination of power purchase agreements (PPAs) by solar power companies, and unexpected risk for traditional power generation companies, grid operators and wind turbine manufacturers.
+	- payback time (time to produce more energy than it was needed to produce the tech)
+		- 2000 : ~8-11 years
+		- 2006 : 1.5-3.5 years
+		- 2013 : 0.75-3.5
+			- avg of 2 years for crystalline silicon
+	
+Issues :
+	- DC power source (PV)
+		- Convert to AC with inverters
+	- Fluctuating day/night and temperature
+
+World stats :
+	- 40% increase per year
+	- Total capacity 303 GW (2016)
+	- China biggest producer (78 GW)
+	- Honduras biggest % of grid use (12.5% solar)
+	- Largest manuf = China
+
+artificial photosynthesis
+	- convert sunlight, water & CO2 into carbohydrates and oxygen
+	- nanotech
+	
+photovoltaics (PV)
+	- (22.1%) Cadmium telluride
+	- (34.5%) four-junction module in a prism that extract power from split sun rays for more efficiency
+	- (40.8%) concentrated triple-junction inverted metamorphic
+	- Largest PV plant america : Ivanpah, 392 MW, Mojave Desert California
+	- Largest PV plant world : Longyangxia Dam, 850 MW, Qinghai China
+	- China & India leader ?
+	- 1931
+		- Silver Selenide (selenium cells) 1%
+		- Silicon solar cell (4.5~6%)
+	- Batteries
+	- DC
+
+
+concentrated solar power
+	- Lenses or Mirrors and Tracking
+	- Make Steam to power turbine
+	- Tech
+		- Parabolic trough
+			- Most efficient.
+			- Ex : 50kW Big Dish, Canberra Australia
+		- Compact linear Fresnel reflector
+		- Stirling dish
+		- Solar power tower
+			- Ex : PS10, PS20 solar power plant
+
+hybrid system
+	- Combine PV and CSP and/or Diesel, biogas, etc.
+	- 

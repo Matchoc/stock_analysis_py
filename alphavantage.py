@@ -1,6 +1,7 @@
 import sys
 import os
 os.environ["path"] = os.path.dirname(sys.executable) + ";" + os.environ["path"]
+import shutil
 import glob
 import operator
 import datetime
@@ -31,12 +32,16 @@ from operator import itemgetter
 
 DATA_FOLDER = "data"
 STOCK_LIST = os.path.join(DATA_FOLDER, "news_link.json")
+# taken from https://www.tmxmoney.com/en/research/listed_company_directory.html with the ajax request : https://www.tsx.com/json/company-directory/search/tsx/%5E?callback=jQuery17105222798890806253_1534841471620&_=1534841501595
+TSX_STOCK_LIST = os.path.join(DATA_FOLDER, "all_tsx_listing.json")
 ALPHA_KEY = "JTQ5969IQZV04J91"
 BASE_URL = "https://www.alphavantage.co/query?"
 JSON_PRICE_ROOT = "Time Series (Daily)"
 JSON_CLOSE = "4. close"
 JSON_REGRESSION_SLOPE = "cust. regression slope"
 JSON_REGRESSION_ORIGIN = "cust. regression origin"
+SMALL_WAIT = 5.0
+LONG_WAIT = 20.0
 PRINT_LEVEL=2
 
 
@@ -96,12 +101,33 @@ def circular_iter(data, index):
 def get_latest_json(symbol):
 	priceglob = os.path.join(DATA_FOLDER, "prices", symbol, "*.json")
 	pricefiles = glob.glob(priceglob)
+	if len(pricefiles) <= 0:
+		return None, None
 	pricefiles = sorted(pricefiles, reverse=True)
 	pricefile = pricefiles[0]
 	with open(pricefile, 'r') as jsonfile:
 		data = json.load(jsonfile)
 		
 	return data, pricefile
+	
+	
+def get_tsx_symbols(withexchange=True):
+	with open(TSX_STOCK_LIST, 'r') as jsonfile:
+		symbols = json.load(jsonfile)
+		
+	if withexchange:
+		return [a["symbol"].replace(".", "-") + ".to" for a in symbols]
+	else:
+		return [a["symbol"].replace(".", "-") for a in symbols]
+	
+def get_custom_symbols(withexchange=True):
+	with open(STOCK_LIST, 'r') as jsonfile:
+		symbols = json.load(jsonfile)
+		
+	if withexchange:
+		return [symbol + "." + symbols[symbol]["exchange"] for symbol in symbols]
+	else:
+		return [symbol for symbol in symbols]
 	
 ###############################################################################
 # PLOTTING
@@ -173,6 +199,25 @@ def del_old_prices():
 		myprint("comparing " + file + " to " + localglob[-1])
 		if file != localglob[-1]:
 			os.remove(file)
+			
+			
+def del_invalid_data():
+	priceglob = os.path.join(DATA_FOLDER, "prices", "**", "*.json")
+	pricefiles = glob.glob(priceglob)
+	
+	count = 0
+	for file in pricefiles:
+		myprint("processing file " + file)
+		symbol = os.path.basename(os.path.dirname(file))
+		data, f = get_latest_json(symbol)
+		myprint("latest data for {}".format(symbol))
+		if data is not None and "Information" in data:
+			myprint("folder " + os.path.dirname(file) + " will be deleted")
+			#pass
+			shutil.rmtree(os.path.dirname(file))
+			count += 1
+			
+	myprint("Total deleted folders " + str(count))
 	
 def dl_time_series_daily_adjusted(symbol, compact):
 	if compact:
@@ -187,7 +232,10 @@ def dl_time_series_daily_adjusted(symbol, compact):
 	jtext = json.loads(text, object_hook=as_float)
 	
 	timestr = strftime("%Y%m%d-%H%M%S")
-	savepath = os.path.join(DATA_FOLDER, "prices", symbol, timestr + "-adj.json")
+	fsymbol = symbol
+	if "prn" in symbol or "PRN" in symbol:
+		fsymbol = "PRRN"
+	savepath = os.path.join(DATA_FOLDER, "prices", fsymbol, timestr + "-adj.json")
 	savepath = savepath.replace(":", "-")
 
 	if not os.path.exists(os.path.dirname(savepath)):
@@ -203,23 +251,28 @@ def dl_time_series_daily_adjusted(symbol, compact):
 	else:
 		return 0
 
-def dl_full_time_series_daily_adjusted():
-	with open(STOCK_LIST, 'r') as jsonfile:
-		symbols = json.load(jsonfile)
+def dl_full_time_series_daily_adjusted(missing_only):
+	symbols = get_tsx_symbols(True)
 	
 	count = 0
 	total = len(symbols)
 	for symbol in symbols:
 		count += 1
+		###########
+		if missing_only:
+			savepath = os.path.join(DATA_FOLDER, "prices", symbol)
+			if os.path.exists(savepath):
+				continue
+		###########
 		myprint("Downloading " + str(count) + "/" + str(total) + " : " + symbol, 2)
-		ret = dl_time_series_daily_adjusted(symbol + "." + symbols[symbol]["exchange"], False)
+		ret = dl_time_series_daily_adjusted(symbol, False)
 		if ret == 1:
-			myprint("Download Failed. Too many requests. Wainting 10 seconds.", 5)
-			sleep(20.0) # api call frenquency exceeded
-			ret = dl_time_series_daily_adjusted(symbol + "." + symbols[symbol]["exchange"], False)
+			myprint("Download Failed. Too many requests. Wainting " + str(LONG_WAIT) + " seconds.", 5)
+			sleep(LONG_WAIT) # api call frenquency exceeded
+			ret = dl_time_series_daily_adjusted(symbol, False)
 		elif ret == 2:
 			myprint("Download Failed. Symbol not found or URL malformed.", 5)
-		sleep(5.0)
+		sleep(SMALL_WAIT)
 		
 def tech_linear_regression(symbol, period):
 	data, pricefile = get_latest_json(symbol)
@@ -270,7 +323,7 @@ def tech_linear_regression_all(period):
 	total = len(symbols)
 	count = 1
 	for symbol in symbols:
-		myprint("[" + str(count) + "/" + str(total) + "] linear regression for " + symbol)
+		myprint("[" + str(count) + "/" + str(total) + "] linear regression for " + symbol, 2)
 		tech_linear_regression(symbol, period)
 		count += 1
 	
@@ -378,7 +431,7 @@ def cmp_lin_reg(symbol, compare_to, period):
 		
 def do_actions(actions, params):
 	if "dl_everything" in actions:
-		dl_full_time_series_daily_adjusted()
+		dl_full_time_series_daily_adjusted(params["dl_missing_only"])
 	if "dl_single_symbol" in actions:
 		dl_time_series_daily_adjusted(params["single_symbol"], False)
 	if "tech_lin_reg_all" in actions:
@@ -399,19 +452,22 @@ def do_actions(actions, params):
 		plt.show()
 	if "del_old_prices" in actions:
 		del_old_prices()
+	if "del_invalid_data" in actions:
+		del_invalid_data()
 		
 		
 if __name__ == '__main__':
 	actions = [
 		#"cmp_lin_reg",
 		#"cmp_pearson_corelation_all", # calculate the pearson correlation factor single_symbol in params to all other symbols in prices folder
-		#"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
+		"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
 		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
 		#"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
 		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"del_old_prices", # Cleanup any but the last price
-		"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
+		#"del_invalid_data", # Cleanup Invalid price so we can re-download only those
+		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
@@ -420,6 +476,7 @@ if __name__ == '__main__':
 		"tech_period" : 100, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting
 		"plot_period" : 140, # length of time to go back in time from plot_start_date
+		"dl_missing_only" : True, # when doing a dl_everything. Will only download missing prices (if the folder doesn't exist)
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)

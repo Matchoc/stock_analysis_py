@@ -1,3 +1,6 @@
+What about machine learning cie ?
+
+
 bbn-un.to : Brookfield business partners
 	- Investment company, primary current investment in 
 		business services (real estate, fuel...), construction, energy and industrial operations
@@ -143,3 +146,28 @@ BLX.to : Boralex
 	- Hugues Girardin VP developpement (27 ans ?!)
 	- bemol : Boralex debt is increasing quite a bit faster than it's equity which is worrysome (but could be ok long-term)
 	- Volume moyen : 255 300
+	
+	
+	
+LNR.to : Linamar Corporation
+	- Produce precision parts (mostly for automotive application ?)
+	- Stock nearly halved in the last six month
+	- https://simplywall.st/stocks/ca/automobiles/tsx-lnr/linamar-shares/news/why-linamar-corporation-tselnr-is-a-star-in-a-falling-market/
+	- Worries about interest vs debt with the tarifs war from America ?
+	
+	
+	
+PZA.to : Pizza Pizza Corp.
+	- Owner of Pizza Pizza (largest canadian chain of pizzeria ?)
+	- Big drop recently (17$ to 10$)
+	- 7.27% dividend
+	- Reduce sales and increase in prices (price increase supposedly related to the increase in minimum wage in Canada)
+	
+
+	
+FTN.TO : Financial 15 split Corp
+	- ETF that invest in financial sector
+	- (2018-08-26) around 10.30$
+	- around 15% dividend !?!?!
+	
+	

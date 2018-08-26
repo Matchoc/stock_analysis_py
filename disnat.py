@@ -32,6 +32,8 @@ from operator import itemgetter
 
 DATA_FOLDER = "data"
 STOCK_LIST = os.path.join(DATA_FOLDER, "news_link.json")
+# taken from https://www.tmxmoney.com/en/research/listed_company_directory.html with the ajax request : https://www.tsx.com/json/company-directory/search/tsx/%5E?callback=jQuery17105222798890806253_1534841471620&_=1534841501595
+TSX_STOCK_LIST = os.path.join(DATA_FOLDER, "all_tsx_listing.json")
 ALPHA_KEY = "JTQ5969IQZV04J91"
 BASE_URL = "https://financials.morningstar.com/ajax/ReportProcess4CSV.html?&t={ticker}&region=can&culture=en-US&ops=clear&cur=&reportType=is&period=12&dataType=A&order=asc&columnYear=5&curYearPart=1st5year&rounding=3&view=raw&r=801461&denominatorView=raw&number=3"
 KEY_STAT_URL = "http://financials.morningstar.com/ajax/exportKR2CSV.html?t={ticker}&culture=en-CA&region=CAN&order=asc&r=115497"
@@ -134,6 +136,24 @@ def get_latest_financial(symbol):
 	return data, pricefile
 	
 	
+def get_tsx_symbols(withexchange=True):
+	with open(TSX_STOCK_LIST, 'r') as jsonfile:
+		symbols = json.load(jsonfile)
+		
+	if withexchange:
+		return [a["symbol"].replace(".", "-") + ".to" for a in symbols]
+	else:
+		return [a["symbol"].replace(".", "-") for a in symbols]
+	
+def get_custom_symbols(withexchange=True):
+	with open(STOCK_LIST, 'r') as jsonfile:
+		symbols = json.load(jsonfile)
+		
+	if withexchange:
+		return [symbol + "." + symbols[symbol]["exchange"] for symbol in symbols]
+	else:
+		return [symbol for symbol in symbols]
+	
 ###############################################################################
 # MORNINGSTAR
 ###############################################################################
@@ -192,7 +212,10 @@ def dl_financial_key_stat(single_symbol):
 	csv_array = new_csv_array
 		
 	timestr = strftime("%Y%m%d-%H%M%S")
-	savepath = os.path.join(DATA_FOLDER, "financials", single_symbol, timestr + "-key.json")
+	fsymbol = single_symbol
+	if "prn" in single_symbol or "PRN" in single_symbol:
+		fsymbol = "PRRN"
+	savepath = os.path.join(DATA_FOLDER, "financials", fsymbol, timestr + "-key.json")
 	savepath = savepath.replace(":", "-")
 		
 	if not os.path.exists(os.path.dirname(savepath)):
@@ -241,7 +264,10 @@ def dl_financial(single_symbol):
 	csv_array = new_csv_array
 	
 	timestr = strftime("%Y%m%d-%H%M%S")
-	savepath = os.path.join(DATA_FOLDER, "financials", single_symbol, timestr + "-income.json")
+	fsymbol = single_symbol
+	if "prn" in single_symbol or "PRN" in single_symbol:
+		fsymbol = "PRRN"
+	savepath = os.path.join(DATA_FOLDER, "financials", fsymbol, timestr + "-income.json")
 	savepath = savepath.replace(":", "-")
 
 	if not os.path.exists(os.path.dirname(savepath)):
@@ -253,8 +279,7 @@ def dl_financial(single_symbol):
 	return 0
 	
 def dl_all_financial():
-	with open(STOCK_LIST, 'r') as jsonfile:
-		symbols = json.load(jsonfile)
+	symbols = get_tsx_symbols(False)
 	
 	count = 0
 	total = len(symbols)
@@ -271,13 +296,22 @@ def dl_all_financial():
 		sleep(SMALL_WAIT)
 
 def dl_all_key_stat():
-	with open(STOCK_LIST, 'r') as jsonfile:
-		symbols = json.load(jsonfile)
+	symbols = get_tsx_symbols(False)
 	
 	count = 0
 	total = len(symbols)
 	for symbol in symbols:
 		count += 1
+		
+		# delete me
+		single_symbol = symbol.replace(".to", "") # couldn't find a way to tell morningstar which exchange to use. But I think setting the local to CAN does the trick
+		single_symbol = single_symbol.replace(".v", "")
+		single_symbol = single_symbol.replace("-", ".") # morningstar uses AX.UN instead of AX-UN
+		savepath = os.path.join(DATA_FOLDER, "financials", single_symbol)
+		if os.path.exists(savepath):
+			continue
+		###########
+		
 		myprint("Downloading " + str(count) + "/" + str(total) + " : " + symbol, 2)
 		ret = dl_financial_key_stat(symbol)
 		if ret == 1:
@@ -352,7 +386,7 @@ def gather_individual_data(symbol, financials, prices):
 		else:
 			special = ", ".join(row)
 			
-	myprint("symbol " + symbol)
+	#myprint("symbol " + symbol)
 	price_data = prices[JSON_PRICE_ROOT]
 	sorted_dates = sorted(price_data.keys())
 	latest_price = price_data[sorted_dates[-1]][JSON_CLOSE]
@@ -366,9 +400,9 @@ def gather_individual_data(symbol, financials, prices):
 		if last_year in price_data:
 			data[year][JSON_CLOSE] = price_data[last_year][JSON_CLOSE]
 			data[year][FINANCIAL_MARKET_CAP] = data[year][JSON_CLOSE] * data[year][FINANCIAL_SHARE_OUTSTANDING]
-			myprint(symbol + " : price for " + last_year + " is " + str(data[year][JSON_CLOSE]))
+			#myprint(symbol + " : price for " + last_year + " is " + str(data[year][JSON_CLOSE]))
 		else:
-			myprint(symbol + " : price for " + last_year + " is N/A")
+			#myprint(symbol + " : price for " + last_year + " is N/A")
 			data[year][JSON_CLOSE] = "N/A"
 			data[year][FINANCIAL_MARKET_CAP] =  "N/A"
 	
@@ -420,6 +454,98 @@ def generate_report(symbols):
 	with open(os.path.join(base_path, "combined.csv"), 'w') as fo:
 		for row in combine_report_data:
 			fo.write(",".join(str(x) for x in row) + "\n")
+			
+def generate_filtered_all(max_cols):
+	symbols = get_tsx_symbols()
+	good_symbols = []
+	# first remove any symbol that have invalid data (no key financials from morningstar or no price history)
+	skip_financial = 0
+	skip_price = 0
+	for symbol in symbols:
+		key_data, file = get_latest_financial(symbol)
+		if key_data is None or len(key_data) <= 2:
+			myprint("skipped " + symbol + " because couldn't find key financials", 1)
+			skip_financial += 1
+			continue
+		price_data, file = get_latest_price(symbol)
+		if price_data is None or "Information" in price_data or "Error Message" in price_data:
+			myprint("skipped " + symbol + " because couldn't find price history", 1)
+			skip_price += 1
+			continue
+		good_symbols.append({"symbol" : symbol, "price_data" : price_data, "key_data" : key_data})
+		
+	myprint("Skipped {} symbols because of financial and {} symbols because of price for a total of {} / {}".format(skip_financial, skip_price, skip_financial + skip_price, len(symbols)), 3)
+		
+	# second, gather usefull info
+	count = 1
+	for symbol_info in good_symbols:
+		myprint("({} / {})Gathering info for {}".format(count, len(good_symbols), symbol_info["symbol"]),1)
+		count += 1
+		key_data = symbol_info["key_data"]
+		price_data = symbol_info["price_data"]
+		
+		# first gathering. Latest price
+		price_data_root = price_data[JSON_PRICE_ROOT]
+		sorted_dates = sorted(price_data_root.keys())
+		latest_price = price_data_root[sorted_dates[-1]][JSON_CLOSE]
+		symbol_info["latest_price"] = latest_price
+		
+		# second interesting key financials
+		big_data = gather_individual_data(symbol_info["symbol"], key_data, price_data)
+		cur_year = sorted(list(big_data.keys()))[-1]
+		most_recent_data = big_data[cur_year]
+		myprint(most_recent_data)
+		revenuepattern = r"Revenue [A-Z]{3} Mil" # "2018-10"
+		cur = "CAD"
+		for elem in most_recent_data:
+			if re.match(revenuepattern, elem) is not None:
+				cur = elem[8:11]
+		symbol_info[FINANCIAL_MARKET_CAP] = most_recent_data[FINANCIAL_MARKET_CAP]
+		symbol_info["Share Outstanding"] = most_recent_data[FINANCIAL_SHARE_OUTSTANDING]
+		symbol_info["Long-Term Debt"] = most_recent_data['Long-Term Debt']
+		symbol_info["Short-Term Debt"] = most_recent_data['Short-Term Debt']
+		symbol_info["Debt/Equity"] = most_recent_data['Debt/Equity']
+		symbol_info["Total Debt"] = symbol_info["Long-Term Debt"] + symbol_info["Short-Term Debt"]
+		symbol_info["Revenue Mil"] = most_recent_data["Revenue " + cur + " Mil"]
+		symbol_info["Net Income Mil"] = most_recent_data['Net Income ' + cur + ' Mil']
+		symbol_info["Dividends $"] = most_recent_data['Dividends ' + cur]
+		symbol_info["Dividends %"] = symbol_info["Dividends $"] / symbol_info["latest_price"]
+		symbol_info["EPS"] = most_recent_data['Earnings Per Share ' + cur]
+		symbol_info["R&D"] = most_recent_data['R&D']
+		symbol_info["ROE %"] = most_recent_data['Return on Equity %']
+		symbol_info["Operating Income Mil"] = most_recent_data['Operating Income ' + cur + ' Mil']
+		symbol_info["Total Liabilities"] = most_recent_data['Total Liabilities']
+		symbol_info["Shares Mil"] = most_recent_data['Shares Mil']
+		symbol_info["currency"] = cur
+		
+		symbol_info[JSON_REGRESSION_SLOPE] = price_data_root[sorted_dates[-1]][JSON_REGRESSION_SLOPE]
+		symbol_info[JSON_REGRESSION_ORIGIN] = price_data_root[sorted_dates[-1]][JSON_REGRESSION_ORIGIN]
+		
+		symbol_info["key_data"] = None
+		symbol_info["price_data"] = None
+	
+	#third, compute a csv for output
+	good_symbols = sorted(good_symbols, key=operator.itemgetter("symbol"))
+	
+	header = sorted(list(good_symbols[0].keys()))
+	header.remove("symbol")
+	csv_array = []
+	for symbol_info in good_symbols:
+		row_str = symbol_info["symbol"]
+		for key in header:
+			if key != "symbol":
+				row_str += ", " + str(symbol_info[key])
+		csv_array.append(row_str)
+		
+	timestr = strftime("%Y%m%d-%H%M%S")
+	base_path = os.path.join(DATA_FOLDER, "reports", timestr)
+	if not os.path.exists(base_path):
+		os.makedirs(base_path)
+	with open(os.path.join(base_path, "custom_filtered.csv"), 'w') as fo:
+		fo.write("symbol, " + ",".join(str(x) for x in header) + "\n")
+		for row in csv_array:
+			fo.write(row + "\n")
+		
 ###############################################################################
 # MAIN
 ###############################################################################
@@ -435,6 +561,8 @@ def do_actions(actions, params):
 		dl_all_key_stat()
 	if "generate_report" in actions:
 		generate_report(params["report_symbols"])
+	if "generate_filtered_all" in actions:
+		generate_filtered_all(params["max_report"])
 	if "del_old_financial" in actions:
 		del_old_financial("income")
 		del_old_financial("key")
@@ -447,15 +575,15 @@ if __name__ == '__main__':
 		#"dl_financial_key_stat", # Use MorningStar URL to download a CSV of financial key data for the single_symbol (mostly dividend and various ratios)
 		#"dl_all_financial", # Use dl_financial on all tickers in news_link.json
 		#"dl_all_key_stat", # Use dl_financial_key_stat on all tickers in news_link.json (should probably be used in colaboration with dl_all_financial)
-		"generate_report", # Use financial and price data to generate csv report of each symbols in "report_symbols" (combined and individual)
+		#"generate_report", # Use financial and price data to generate csv report of each symbols in "report_symbols" (combined and individual)
 		#"del_old_financial", # Cleanup old financial data and keep only the latest in folder data/financials/<symbol>/*-income.json
+		"generate_filtered_all", # generate a combine report of top "max_report" number of tickers that fit a certain list of filters
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
 		"single_symbol" : "BNS.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
-		#"report_symbols" : ["DRG-UN.to", "REI-UN.to", "HR-UN.to", "D-UN.to", "CAR-UN.to", "CUF-UN.to", "AX-UN.to", "DIR-UN.to"],
 		"report_symbols" : ["VNP.to", "AQN.to", "ATP.to", "BLDP.to", "BLX.to", "BEP-UN.to", "CAS.to", "CLR.to", "DRT.to", "ECO.to", "HYG.to", "INE.to", "KPT.to", "NFI.to", "NPI.to", "PIF.to", "SOY.to", "RNW.to", "WPRT.to", "EHT.v", "FVR.to", "UGE.v", "RPG.to", "SXI.to", "CMH.to", "SAN.to"],
-		#"report_symbols" : ["AX-UN.to", "DRG-UN.to"],
+		"max_report" : 20,
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)
