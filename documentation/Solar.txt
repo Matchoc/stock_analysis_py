@@ -1,15 +1,59 @@
-solar energy
+﻿solar energy
+
+Canada export related to Solar Cell Production (2012 in millions of United States dollars) :
+	- Raw Aluminium (5 570)
+	- Iron Ore (4 569)
+	- Gold (3 730)
+	- Copper Ore (3 107)
+	- 
+
+
+
+Global PV market by technology in 2013
+
+  multi-Si (54.9%)
+  mono-Si (36.0%)
+  CdTe (5.1%)
+  a-Si (2.0%)
+  CIGS (2.0%)
+
+
+Canadian companies :
+	- Canadian Solar	Canada	Crystalline silicon	0	100	270	420	0	40	102.8	200
+	- Morgan Solar Inc	Canada	-						
 
 Materials
+	- Perovskite solar cells are a very efficient solar energy converter and have excellent optoelectric properties for photovoltaic purposes, but they are expensive and difficult to manufacture.
+	- Another newer technology, thin-film PV, are manufactured by depositing semiconducting layers on substrate in vacuum. The substrate is often glass or stainless-steel, and these semiconducting layers are made of many types of materials including cadmium telluride (CdTe), copper indium diselenide (CIS), copper indium gallium diselenide (CIGS), and amorphous silicon (a-Si).After being deposited onto the substrate the semiconducting layers are separated and connected by electrical circuit by laser-scribing. Thin-film photovoltaics now make up around 20% of the overall production of PV because of the reduced materials requirements and cost to manufacture modules consisting of thin-films as compared to silicon-based wafers.
+	- Crystalline silicon photovoltaics : First, polysilicon is processed from mined quartz until it is very pure (semi-conductor grade). This is melted down when small amounts of boron, a group III element, are added to make a p-type semiconductor rich in electron holes. Typically using a seed crystal, an ingot of this solution is grown from the liquid polycrystalline. The ingot may also be cast in a mold. Wafers of this semiconductor material are cut from the bulk material with wire saws, and then go through surface etching before being cleaned. Next, the wafers are placed into a phosphorus vapor deposition furnace which lays a very thin layer of phosphorus, a group V element, which creates an n-type semiconducting surface. To reduce energy losses, an anti-reflective coating is added to the surface, along with electrical contacts. After finishing the cell, cells are connected via electrical circuit according to the specific application and prepared for shipping and installation.
+	- (CdTe) glass substrate
+	- (CdTe) transparent conductor layer ?
+	- (CdTe) CdS buffer
+	- anti-reflection film ?
+	- n-layer, p-layer ?
+	- *** Perovskite Inexpensive material to replace expensive Cristalline Silicon
 	- Common battery technologies used in today's home PV systems include, the valve regulated lead-acid battery– a modified version of the conventional lead–acid battery, nickel–cadmium and lithium-ion batteries.
 	- Other rechargeable batteries used for distributed PV systems include, sodium–sulfur and vanadium redox batteries, two prominent types of a molten salt and a flow battery, respectively
 	- Cadmium (Cd) a toxic heavy metal 
 		- as semiconductor in CdTe solar cells
 		- as buffer layer for CIGS cells (CdS)
 	- crystalline silicon modules. Lead in solder material for copper strings of cells
-	- Cadmium telluride converted 22.1% of sunlight (experimental)
-	- Copper Indium Gallium Selenide (thin-film PV)
+	- Cadmium telluride (CdTe) converted 22.1% of sunlight (experimental)
+	- Copper Indium Gallium Selenide (CIGS) (thin-film PV)
+	- Copper Indium Diselenide (CIS)
+	- (CIGS) Soda lime glass substrate
+	- (CIGS) Mo layer back contact
+	- (CIGS) CdS or Zn (S, OH)x as buffer layer
+	- (CIGS) ZnO:AI as front contact
 	- Polysilicon use exceeds all other polysilicon use
+	- Promising new tech Organic-Inorganic hybrid Methylammonium lead halide perovskites
+		- Metal back contact (Al, Au, Ag)
+		- hole transfer layer (spiro-MeOTAD, P3HT, PTAA, CuSCN, Cul, NiO)
+		- absorber layer (CH3NH3PbIxBr3-x, CH3NH3PbIxCl3-x or CH3NH3PbI3)
+		- electron transport layer (TiO, ZnO, Al2O3 or SnO2)
+		- top contact layer (fluorine doped tin oxide or tin doped indium oxide)
+	- Promising new tech Copper Zinc Tin Sulfide (Cu2ZnSnS4 or CZTS), zinc phosphide (Zn3P2) and single-walled carbon nano-tubes (SWCNT).
+
 	
 Grid Integration :
 	- CSP might store excess heat in high-temperature molten salts

@@ -460,26 +460,28 @@ if __name__ == '__main__':
 	actions = [
 		#"cmp_lin_reg",
 		#"cmp_pearson_corelation_all", # calculate the pearson correlation factor single_symbol in params to all other symbols in prices folder
-		"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
+		#"tech_lin_reg_all", # calculate linear regression for all symbols in the "prices" folder
 		#"tech_lin_reg", # calculate the slope and origin of a linear regression of closing prices
 		#"plot_line", # plot data from JSON_REGRESSION_SLOPE & JSON_REGRESSION_ORIGIN at "plot_start_date"
 		#"plot_points", # plot closing price of a range of data from plot_start_date back a number of "plot_period"
 		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"del_old_prices", # Cleanup any but the last price
 		#"del_invalid_data", # Cleanup Invalid price so we can re-download only those
-		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
+		"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
-		"single_symbol" : "UGE.v", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		"single_symbol" : "AAAA.v", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		#"single_symbol" : "TV.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
-		"tech_period" : 100, # days to calculate the moving technical (moving average, moving regression, etc.)
+		"tech_period" : 140, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting
 		"plot_period" : 140, # length of time to go back in time from plot_start_date
-		"dl_missing_only" : True, # when doing a dl_everything. Will only download missing prices (if the folder doesn't exist)
+		"dl_missing_only" : False, # when doing a dl_everything. Will only download missing prices (if the folder doesn't exist)
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)
+	
+	#["ETX.to", "AQN.to", "XQB.to", "BB.to"],
 	
 	#dl_full_time_series_daily_adjusted()
 	#dl_time_series_daily_adjusted("tsx:aif", False)

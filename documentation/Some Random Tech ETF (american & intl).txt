@@ -1,0 +1,66 @@
+Lattice Semiconductor Corp (LSCC)	2.56%
+Cloudera Inc (CLDR)	2.39%
+Xilinx Inc (XLNX)	1.89%
+Cadence Design Systems Inc (CDNS)	1.86%
+MKS Instruments Inc (MKSI)	1.84%
+Jenoptik AG (JEN:XETRA)	1.77%
+Advanced Micro Devices Inc (AMD)	1.76%
+Lam Research Corp (LRCX)	1.75%
+Hitachi High-Technologies Corp (8036:TYO)	1.73%
+Ultra Clean Holdings Inc (UCTT)	1.72%
+Talend SA (TLND)	1.70%
+Teradyne Inc (TER)	1.68%
+Alteryx Inc (AYX)	1.68%
+Cognex Corp (CGNX)	1.67%
+Synopsys Inc (SNPS)	1.67%
+NVIDIA Corp (NVDA)	1.64%
+Mellanox Technologies Ltd (MLNX)	1.62%
+Splunk Inc (SPLK)	1.60%
+Seagate Technology PLC (STX)	1.59%
+ASML Holding NV (ASML:AEX)	1.58%
+Applied Materials Inc (AMAT)	1.57%
+Atos SE (ATO:PAR)	1.56%
+Mitsubishi Electric Corp (6503:TYO)	1.56%
+Alibaba Group Holding Ltd (BABA)	1.56%
+Western Digital Corp (WDC)	1.54%
+Cypress Semiconductor Corp (CY)	1.54%
+Renesas Electronics Corp (6723:TYO)	1.53%
+SK Hynix Inc (000660:KSC)	1.53%
+Micron Technology Inc (MU)	1.52%
+Apple Inc (AAPL)	1.52%
+BlackBerry Ltd (BB:CAQ)	1.50%
+International Business Machines Corp (IBM)	1.50%
+Samsung Electronics Co Ltd (SMSN:LSE)	1.49%
+Intel Corp (INTC)	1.49%
+Teradata Corp (TDC)	1.49%
+Honeywell International Inc (HON)	1.48%
+Tower Semiconductor Ltd (TSEM)	1.48%
+Alphabet Inc (GOOGL)	1.47%
+Isra Vision AG (ISR:DAX)	1.47%
+Oracle Corp (ORCL)	1.46%
+Taiwan Semiconductor Manufacturing Co Ltd (TSM)	1.45%
+NEC Corp (6701:TYO)	1.45%
+Nuance Communications Inc (NUAN)	1.45%
+Accenture PLC (ACN)	1.42%
+Nanometrics Inc (NANO)	1.41%
+Microsoft Corp (MSFT)	1.40%
+FLIR Systems Inc (FLIR)	1.39%
+SAP SE (SAP:DAX)	1.39%
+CEVA Inc (CEVA)	1.39%
+Attunity Ltd (ATTU)	1.39%
+Koninklijke KPN NV (KPN:AEX)	1.39%
+Kohyoung Technology Inc (098460:KOE)	1.36%
+Toshiba Corp (6502:TYO)	1.36%
+Nippon Telegraph and Telephone Corp (9432:TYO)	1.34%
+Raytheon Co (RTN)	1.32%
+IQE PLC (IQE:LSE)	1.32%
+Siemens AG (SIE:DAX)	1.31%
+Lockheed Martin Corp (LMT)	1.29%
+Northrop Grumman Corp (NOC)	1.27%
+Nokia Oyj (NOK)	1.27%
+Qualcomm Inc (QCOM)	1.24%
+National Instruments Corp (NATI)	1.23%
+Asustek Computer Inc (2357:TAI)	1.23%
+Fujitsu Ltd (6702:TYO)	1.16%
+HP Inc (HPQ)	1.12%
+Maxar Technologies Inc (MAXR:TOR)	0.47%
