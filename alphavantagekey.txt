@@ -1,1 +1,2 @@
 Welcome to Alpha Vantage! Here is your API key: JTQ5969IQZV04J91. Please record this API key for lifetime access to Alpha Vantage.
+Welcome to Alpha Vantage! Here is your API key: GDM3QW3WDJQCQ33D. Please record this API key at a safe place for future data access.

@@ -19,6 +19,7 @@ import scipy.ndimage
 import scipy.stats
 import multiprocessing
 import matplotlib.pyplot as plt
+import statistics
 from bs4 import BeautifulSoup
 from PIL import Image
 from time import strftime
@@ -39,9 +40,10 @@ TSX_STOCK_LIST = os.path.join(DATA_FOLDER, "all_tsx_listing.json")
 ALPHA_KEY = "JTQ5969IQZV04J91"
 BASE_URL = "https://financials.morningstar.com/ajax/ReportProcess4CSV.html?&t={ticker}&region=can&culture=en-US&ops=clear&cur=&reportType=is&period=12&dataType=A&order=asc&columnYear=5&curYearPart=1st5year&rounding=3&view=raw&r=801461&denominatorView=raw&number=3"
 KEY_STAT_URL = "http://financials.morningstar.com/ajax/exportKR2CSV.html?t={ticker}&culture=en-CA&region=CAN&order=asc&r=115497"
-TSX_URL = "https://web.tmxmoney.com/company.php?qm_symbol={symbol}&locale=EN"
+TSX_URL = "https://money.tmx.com/company.php?qm_symbol={symbol}&locale=EN"
 JSON_PRICE_ROOT = "Time Series (Daily)"
 JSON_CLOSE = "4. close"
+JSON_DIVIDEND = "7. dividend amount"
 JSON_REGRESSION_SLOPE = "cust. regression slope"
 JSON_REGRESSION_ORIGIN = "cust. regression origin"
 #FINANCIAL_SHARE_OUTSTANDING = "Weighted average shares outstanding Diluted"
@@ -49,7 +51,7 @@ FINANCIAL_SHARE_OUTSTANDING = "Shares Mil"
 FINANCIAL_MARKET_CAP = "Market Capitalization"
 SMALL_WAIT = 4.0
 LONG_WAIT = 20.0
-PRINT_LEVEL=0
+PRINT_LEVEL=1
 
 
 ###############################################################################
@@ -140,14 +142,15 @@ def get_latest_financial(symbol):
 	return data, pricefile
 	
 	
-def get_tsx_symbols(withexchange=True, separator='-'):
-	with open(TSX_STOCK_LIST, 'r') as jsonfile:
+def get_tsx_symbols(symbol_file, withexchange=True, separator='-'):
+	loadpath = os.path.join(DATA_FOLDER, symbol_file)
+	with open(loadpath, 'r') as jsonfile:
 		symbols = json.load(jsonfile)
 		
 	if withexchange:
-		return [a["symbol"].replace(".", separator) + ".to" for a in symbols]
+		return [a.replace(".", separator) + "." + symbols[a]["exchange"] for a in symbols]
 	else:
-		return [a["symbol"].replace(".", separator) for a in symbols]
+		return [a.replace(".", separator) for a in symbols]
 	
 def get_custom_symbols(withexchange=True):
 	with open(STOCK_LIST, 'r') as jsonfile:
@@ -282,8 +285,8 @@ def dl_financial(single_symbol):
 			
 	return 0
 	
-def dl_all_financial():
-	symbols = get_tsx_symbols(False)
+def dl_all_financial(symbol_file):
+	symbols = get_tsx_symbols(symbol_file, False)
 	
 	count = 0
 	total = len(symbols)
@@ -299,8 +302,8 @@ def dl_all_financial():
 			myprint("Download Failed. Symbol not found or URL malformed.", 5)
 		sleep(SMALL_WAIT)
 
-def dl_all_key_stat(missingonly):
-	symbols = get_tsx_symbols(False)
+def dl_all_key_stat(missingonly, symbol_file):
+	symbols = get_tsx_symbols(symbol_file, False)
 	
 	count = 0
 	total = len(symbols)
@@ -329,8 +332,8 @@ def dl_all_key_stat(missingonly):
 		
 		
 
-def dl_cie_info():
-	symbols = get_tsx_symbols(False, '.')
+def dl_cie_info(symbol_file):
+	symbols = get_tsx_symbols(symbol_file, False, '.')
 	#<tr>
 	#	<td class="label">Business Description:</td>
 	#	<td class="data" colspan="4">WPT Industrial Real Estate Investment Trust (the REIT) is an open-ended real estate investment trust. The REIT is engaged in the business of acquiring and owning industrial investment properties located in the United States. Its objective is to provide Unitholders with an opportunity to invest in a portfolio of institutional-quality industrial properties in the United States markets, with a particular focus on distribution of the industrial real estate.</td>
@@ -499,8 +502,8 @@ def generate_report(symbols):
 		for row in combine_report_data:
 			fo.write(",".join(str(x) for x in row) + "\n")
 			
-def generate_filtered_all(max_cols):
-	symbols = get_tsx_symbols()
+def generate_filtered_all(max_cols, symbol_file):
+	symbols = get_tsx_symbols(symbol_file)
 	good_symbols = []
 	# first remove any symbol that have invalid data (no key financials from morningstar or no price history)
 	skip_financial = 0
@@ -606,31 +609,149 @@ def print_cie_match_regex(params):
 				num_char = len(desc)
 				for i in range(0, num_char, 200):
 					myprint(desc[i:i+200],1)
-			
 	myprint(result, 5)
+	
+	
+def update_news_link():
+	timestr = strftime("%Y%m%d-%H%M%S")
+	savepath = os.path.join(DATA_FOLDER, "news_link-" + timestr + ".json")
+	base_urls = [
+		{"url":"https://www.tsx.com/json/company-directory/search/tsx/", "exchange":"to"}, 
+		{"url":"https://www.tsx.com/json/company-directory/search/tsxv/", "exchange":"v"}]
+	letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0-9"]
+	data = {}
+	for letter in letters:
+		for base_url in base_urls:
+			url = base_url["url"] + letter
+			result = downloadURL(url)
+			j_data = json.loads(result)
+			if "results" not in j_data or len(j_data["results"]) == 0:
+				continue
+			for cie in j_data["results"]:
+				for instrument in cie["instruments"]:
+					if instrument["symbol"] in data:
+						myprint(instrument["symbol"] + " Already in news_link", 2)
+					if instrument["symbol"] not in data or base_url["exchange"] == "to":
+						data[instrument["symbol"]] = {"exchange":base_url["exchange"], "name":instrument["name"]}
+			
+			sleep(SMALL_WAIT)
+	
+	with open(savepath, 'w') as fo:
+		json.dump(data, fo, sort_keys=True,
+			indent=4, separators=(',', ': '))
+			
+def generate_price_report(start_date, num_days):
+	dirlist = [x[0] for x in os.walk(os.path.join(DATA_FOLDER, "prices"))]
+	
+	count = 0
+	count_valid = 0
+	count_invalid = 0
+	total = len(dirlist)
+	csv_result = ["symbol, latest price, january price, std deviation, 16-day avg std, dividend, jan diff, dev %, avg dev %"]
+	for dir in dirlist:
+		if "." not in dir:
+			continue
+		myprint("({}/{}) processing file {}".format(str(count), str(total), dir),1)
+		count += 1
+		symbol = os.path.basename(dir)
+		data, f = get_latest_price(symbol)
+		if data is None or "Meta Data" not in data:
+			myprint("Invalid Entry: " + dir + ", skipped")
+			count_invalid += 1
+			continue
+		
+		time_series = data[JSON_PRICE_ROOT]
+		sorted_dates = sorted(time_series.keys())
+		latest_price = time_series[sorted_dates[-1]][JSON_CLOSE]
+		if latest_price < 8.0:
+			myprint("Price too low (" + str(latest_price) + "), skipped")
+			count_invalid += 1
+			continue
+		if latest_price > 100.0:
+			myprint("Price too high (" + str(latest_price) + "), skipped")
+			count_invalid += 1
+			continue
+		
+		count_valid += 1
+		
+		# calculated since nov 2019?
+		# symbol, std dev, latest close price, jan close price, total dividend
+		myprint("symbol, latest, jan, dividend")
+		#avg_std_dev = calculate_std_dev(time_series)
+		# date format 2005-01-04
+		start_time = datetime.datetime(2020, 1, 1)
+		text_time = start_time.strftime("%Y-%m-%d")
+		num_try = 0
+		while text_time not in time_series and num_try < 60:
+			start_time -= datetime.timedelta(days=1)
+			text_time = start_time.strftime("%Y-%m-%d")
+			num_try += 1
+		if num_try > 50:
+			myprint("Could not find a valid price for January, skipped")
+			count_invalid += 1
+			continue
+		jan_price = time_series[text_time][JSON_CLOSE]
+		text_time = start_date.strftime("%Y-%m-%d")
+		dividend = 0
+		std_data = []
+		for i in range(num_days):
+			cur_date = start_date - datetime.timedelta(days=i)
+			text_time = cur_date.strftime("%Y-%m-%d")
+			if text_time in time_series:
+				dividend += time_series[text_time][JSON_DIVIDEND]
+				std_data.append(time_series[text_time][JSON_CLOSE])
+		
+		std_dev = statistics.stdev(std_data)
+		
+		n = int(len(std_data)/16.0)
+		chunks = [std_data[i:i+n] for i in range(0, len(std_data), n)]
+		avgs = []
+		for chunk in chunks:
+			if len(chunk) <= 1:
+				avgs.append(chunk[0])
+			else:
+				avgs.append(statistics.stdev(chunk))
+		avg_std_dev = statistics.mean(avgs)
+		jan_diff = latest_price-jan_price
+		std_dev_per = std_dev / latest_price
+		avg_std_dev_per = avg_std_dev / latest_price
+		
+		csv_result.append("{},{},{},{},{},{},{},{},{}".format(
+			symbol, latest_price, jan_price, 
+			std_dev, avg_std_dev, dividend, 
+			jan_diff, std_dev_per, avg_std_dev_per))
+			
+	myprint("Processed {}, discarded {}, output {} ".format(count, count_invalid, count_valid),3)
+	myprint("RESULT:",5)
+	for l in csv_result:
+		myprint(l, 5)
 		
 ###############################################################################
 # MAIN
 ###############################################################################
 		
 def do_actions(actions, params):
+	if "update_news_link" in actions:
+		update_news_link()
 	if "dl_financial" in actions:
 		dl_financial(params["single_symbol"])
 	if "dl_financial_key_stat" in actions:
 		dl_financial_key_stat(params["single_symbol"])
 	if "dl_all_financial" in actions:
-		dl_all_financial()
+		dl_all_financial(params["stock_file"])
 	if "dl_all_key_stat" in actions:
-		dl_all_key_stat(params["dl_missing_only"])
+		dl_all_key_stat(params["dl_missing_only"], params["stock_file"])
+	if "generate_price_report" in actions:
+		generate_price_report(params["start_date"], params["how_many_days"])
 	if "generate_report" in actions:
 		generate_report(params["report_symbols"])
 	if "generate_filtered_all" in actions:
-		generate_filtered_all(params["max_report"])
+		generate_filtered_all(params["max_report"], params["stock_file"])
 	if "del_old_financial" in actions:
 		del_old_financial("income")
 		del_old_financial("key")
 	if "dl_cie_info" in actions:
-		dl_cie_info()
+		dl_cie_info(params["stock_file"])
 	if "print_cie_match_regex" in actions:
 		print_cie_match_regex(params)
 		
@@ -638,13 +759,15 @@ def do_actions(actions, params):
 		
 if __name__ == '__main__':
 	actions = [
-		#"dl_cie_info", # Use https://web.tmxmoney.com/company.php?qm_symbol=BB&locale=EN to save simple info about each company on the tsx (website, description, etc.)
+		#"update_news_link", # use https://www.tsx.com/json/company-directory/search/tsx/A to fetch a json of all tsx listed companies
+		#"dl_cie_info", # Use https://money.tmx.com/company.php?qm_symbol=BB&locale=EN to save simple info about each company on the tsx (website, description, etc.)
 		#"print_cie_match_regex", # Print the list of companies in tsx_cie_info.json who's description matches a given regex in params
 		#"dl_financial", # Use MorningStar URLs to download a CSV of financial data for the single_symbol (mostly revenues and expenses and outstanding shares)
 		#"dl_financial_key_stat", # Use MorningStar URL to download a CSV of financial key data for the single_symbol (mostly dividend and various ratios)
 		#"dl_all_financial", # Use dl_financial on all tickers in news_link.json
 		#"dl_all_key_stat", # Use dl_financial_key_stat on all tickers in news_link.json (should probably be used in colaboration with dl_all_financial)
-		"generate_report", # Use financial and price data to generate csv report of each symbols in "report_symbols" (combined and individual)
+		"generate_price_report", # generate csv report of price data for last 1 1/2 year for all interesting symbol (above 9$/share)
+		#"generate_report", # Use financial and price data to generate csv report of each symbols in "report_symbols" (combined and individual)
 		#"del_old_financial", # Cleanup old financial data and keep only the latest in folder data/financials/<symbol>/*-income.json
 		#"generate_filtered_all", # generate a combine report of top "max_report" number of tickers that fit a certain list of filters
 		"nothing" # just so I don't need to play with the last ,
@@ -652,10 +775,13 @@ if __name__ == '__main__':
 	params = {
 		"single_symbol" : "AAAA.v", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		"report_symbols" : ["ETX.to", "AQN.to", "AAAA.v", "BB.to"],
+		"stock_file": "news_link-20210205-161445.json",
 		"max_report" : 20,
 		"dl_missing_only" : False, # when doing a dl_all_key_stat. Will only download missing prices (if the folder doesn't exist)
 		"regex":'(?=.*warehouse)(?=.*data)', # Find those two words in any order inside the description of the company
 		#"regex":'analy', # Find those two words in any order inside the description of the company
+		"start_date":datetime.datetime(2021,2,5), # date to start report calculation
+		"how_many_days":462, # from nov 1 2019 to feb 6 2020
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)

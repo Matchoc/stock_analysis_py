@@ -42,7 +42,7 @@ JSON_REGRESSION_SLOPE = "cust. regression slope"
 JSON_REGRESSION_ORIGIN = "cust. regression origin"
 SMALL_WAIT = 5.0
 LONG_WAIT = 20.0
-PRINT_LEVEL=2
+PRINT_LEVEL=1
 
 
 ###############################################################################
@@ -111,14 +111,15 @@ def get_latest_json(symbol):
 	return data, pricefile
 	
 	
-def get_tsx_symbols(withexchange=True):
-	with open(TSX_STOCK_LIST, 'r') as jsonfile:
+def get_tsx_symbols(symbol_file, withexchange=True, separator='-'):
+	loadpath = os.path.join(DATA_FOLDER, symbol_file)
+	with open(loadpath, 'r') as jsonfile:
 		symbols = json.load(jsonfile)
 		
 	if withexchange:
-		return [a["symbol"].replace(".", "-") + ".to" for a in symbols]
+		return [a.replace(".", separator) + "." + symbols[a]["exchange"] for a in symbols]
 	else:
-		return [a["symbol"].replace(".", "-") for a in symbols]
+		return [a.replace(".", separator) for a in symbols]
 	
 def get_custom_symbols(withexchange=True):
 	with open(STOCK_LIST, 'r') as jsonfile:
@@ -211,13 +212,13 @@ def del_invalid_data():
 		symbol = os.path.basename(os.path.dirname(file))
 		data, f = get_latest_json(symbol)
 		myprint("latest data for {}".format(symbol))
-		if data is not None and "Information" in data:
-			myprint("folder " + os.path.dirname(file) + " will be deleted")
+		if os.path.exists(os.path.dirname(file)) and (data is None or "Information" in data or "Note" in data):
+			myprint("folder " + os.path.dirname(file) + " will be deleted", 1)
 			#pass
 			shutil.rmtree(os.path.dirname(file))
 			count += 1
 			
-	myprint("Total deleted folders " + str(count))
+	myprint("Total deleted folders " + str(count), 2)
 	
 def dl_time_series_daily_adjusted(symbol, compact):
 	if compact:
@@ -244,15 +245,15 @@ def dl_time_series_daily_adjusted(symbol, compact):
 		json.dump(jtext, fo, sort_keys=True,
 			indent=4, separators=(',', ': '))
 			
-	if "Information" in jtext:
+	if "Information" in jtext or "Note" in jtext:
 		return 1
 	if "Error Message" in jtext:
 		return 2
 	else:
 		return 0
 
-def dl_full_time_series_daily_adjusted(missing_only):
-	symbols = get_tsx_symbols(True)
+def dl_full_time_series_daily_adjusted(missing_only, symbol_file):
+	symbols = get_tsx_symbols(symbol_file, True)
 	
 	count = 0
 	total = len(symbols)
@@ -262,6 +263,7 @@ def dl_full_time_series_daily_adjusted(missing_only):
 		if missing_only:
 			savepath = os.path.join(DATA_FOLDER, "prices", symbol)
 			if os.path.exists(savepath):
+				print("skipped")
 				continue
 		###########
 		myprint("Downloading " + str(count) + "/" + str(total) + " : " + symbol, 2)
@@ -428,10 +430,25 @@ def cmp_lin_reg(symbol, compare_to, period):
 	myprint(diffs, 4)
 	return diffs
 		
+def list_invalid_action():
+	priceglob = os.path.join(DATA_FOLDER, "prices", "**", "*.json")
+	pricefiles = glob.glob(priceglob)
+	
+	count = 0
+	for file in pricefiles:
+		myprint("processing file " + file)
+		symbol = os.path.basename(os.path.dirname(file))
+		data, f = get_latest_json(symbol)
+		myprint("latest data for {}".format(symbol))
+		if data is not None and "Error Message" in data:
+			myprint("Invalid Entry: " + os.path.dirname(file),5)
+			count += 1
+			
+	myprint("Total invalid entries " + str(count),3)
 		
 def do_actions(actions, params):
 	if "dl_everything" in actions:
-		dl_full_time_series_daily_adjusted(params["dl_missing_only"])
+		dl_full_time_series_daily_adjusted(params["dl_missing_only"], params["stock_file"])
 	if "dl_single_symbol" in actions:
 		dl_time_series_daily_adjusted(params["single_symbol"], False)
 	if "tech_lin_reg_all" in actions:
@@ -454,6 +471,8 @@ def do_actions(actions, params):
 		del_old_prices()
 	if "del_invalid_data" in actions:
 		del_invalid_data()
+	if "list_invalid_data" in actions:
+		list_invalid_action()
 		
 		
 if __name__ == '__main__':
@@ -467,16 +486,18 @@ if __name__ == '__main__':
 		#"dl_everything", # Download the full 20 years history of daily open/close/adjusted stock info for everything in news_link.json
 		#"del_old_prices", # Cleanup any but the last price
 		#"del_invalid_data", # Cleanup Invalid price so we can re-download only those
-		"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
+		"list_invalid_data",
+		#"dl_single_symbol", # Download the full 20 years history of daily for the specified symbol in single_symbol
 		"nothing" # just so I don't need to play with the last ,
 	]
 	params = {
 		"single_symbol" : "AAAA.v", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
 		#"single_symbol" : "TV.to", # used in dl_single_symbol, tech_lin_reg, plot_line, plot_points...
+		"stock_file": "news_link-20210205-161445.json",
 		"tech_period" : 140, # days to calculate the moving technical (moving average, moving regression, etc.)
 		"plot_start_date" : "2018-06-08", # date from which to start plotting
 		"plot_period" : 140, # length of time to go back in time from plot_start_date
-		"dl_missing_only" : False, # when doing a dl_everything. Will only download missing prices (if the folder doesn't exist)
+		"dl_missing_only" : True, # when doing a dl_everything. Will only download missing prices (if the folder doesn't exist)
 		"nothing" : None # don't have to deal with last ,
 	}
 	do_actions(actions, params)
